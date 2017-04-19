@@ -35,7 +35,7 @@
 + (NSString *)rootKeyForOperation:(GraphQLOperation *)operation {
   if ([operation isKindOfClass:[GraphQLQuery class]]) {
     return @"QUERY_ROOT";
-  } else if ([operation isKindOfClass:[GraphQLQuery class]]) {
+  } else if ([operation isKindOfClass:[GraphQLMutation class]]) {
     return @"MUTATION_ROOT";
   }
   NSAssert(NO, @"Unknown operation type");
