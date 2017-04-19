@@ -10,7 +10,7 @@
 
 @implementation FetchQueryOperation
 
-- (instancetype)initWithClient:(GQClient *)client query:(GraphQLQuery *)query cachePolicy:(CachePolicy)cachePolicy context:(NSInteger)context handlerQueue:(dispatch_queue_t)handlerQueue resultHandler:(OperationResultHandler)resultHandler {
+- (instancetype)initWithClient:(ApolloClient *)client query:(GraphQLQuery *)query cachePolicy:(CachePolicy)cachePolicy context:(NSInteger)context handlerQueue:(dispatch_queue_t)handlerQueue resultHandler:(OperationResultHandler)resultHandler {
   self = [super init];
   if (self) {
     self.client = client;

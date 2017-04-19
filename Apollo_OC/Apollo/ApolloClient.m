@@ -1,17 +1,17 @@
 //
-//  GQClient.m
+//  ApolloClient.m
 //  Apollo_OC
 //
 //  Created by Travel Chu on 3/30/17.
 //  Copyright © 2017 Midtown Doornail. All rights reserved.
 //
 
-#import "GQClient.h"
+#import "ApolloClient.h"
 #import "HTTPNetworkTransport.h"
 #import "FetchQueryOperation.h"
 #import "GraphQLQueryWatcher.h"
 
-@implementation GQClient
+@implementation ApolloClient
 
 - (instancetype)initWithNetworkTransport:(id<NetworkTransport>)networkTransport store:(ApolloStore *)store {
   self = [super init];
@@ -100,7 +100,7 @@
     }
     dispatch_async(self.queue, ^{
       @try {
-        GQTuple *tuple = [response parseResult:self.cacheKeyForObject];
+        ApolloTuple *tuple = [response parseResult:self.cacheKeyForObject];
         GraphQLResult *result = tuple.first;
         RecordSet *records = tuple.second;
         [self notifyResultHandler:result error:nil handlerQueue:handlerQueue resultHandler:resultHandler];

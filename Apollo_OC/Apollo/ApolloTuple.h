@@ -1,5 +1,5 @@
 //
-//  GQTuple.h
+//  ApolloTuple.h
 //  Apollo_OC
 //
 //  Created by Travel Chu on 4/17/17.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GQTuple : NSObject
+@interface ApolloTuple : NSObject
 
 @property (nonatomic, strong) id first;
 @property (nonatomic, strong) id second;

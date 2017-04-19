@@ -8,7 +8,7 @@
 
 #import "ApolloStore.h"
 #import "GraphQLResult.h"
-#import "GQClient.h"
+#import "ApolloClient.h"
 #import "CacheKeyForObject.h"
 #import "GraphQLResultReader.h"
 #import "GraphQLResultNormalizer.h"

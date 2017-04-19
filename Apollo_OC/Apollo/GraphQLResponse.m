@@ -24,7 +24,7 @@
   return self;
 }
 
-- (GQTuple *)parseResult:(CacheKeyForObject)cacheKeyForObject {
+- (ApolloTuple *)parseResult:(CacheKeyForObject)cacheKeyForObject {
   GraphQLOperation *data = nil;
   NSSet <NSString *> *dependentKeys = nil;
   RecordSet *records = nil;
@@ -55,7 +55,7 @@
     }];
   }
   GraphQLResult *result = [[GraphQLResult alloc] initWithData:data errors:errors dependentKeys:dependentKeys];
-  return [GQTuple withFirst:result second:records];
+  return [ApolloTuple withFirst:result second:records];
 }
 
 @end

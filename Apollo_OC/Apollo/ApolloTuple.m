@@ -1,14 +1,14 @@
 //
-//  GQTuple.m
+//  ApolloTuple.m
 //  Apollo_OC
 //
 //  Created by Travel Chu on 4/17/17.
 //  Copyright © 2017 Midtown Doornail. All rights reserved.
 //
 
-#import "GQTuple.h"
+#import "ApolloTuple.h"
 
-@implementation GQTuple
+@implementation ApolloTuple
 
 - (instancetype)initWithFirst:(id)first second:(id)second third:(id)third fouth:(id)fouth {
   self = [super init];

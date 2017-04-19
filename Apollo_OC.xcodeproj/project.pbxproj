@@ -20,10 +20,10 @@
 		ED8709781EA610A200CB9BC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED8709761EA610A200CB9BC6 /* Main.storyboard */; };
 		ED87097A1EA610A200CB9BC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED8709791EA610A200CB9BC6 /* Assets.xcassets */; };
 		ED87097D1EA610A200CB9BC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED87097B1EA610A200CB9BC6 /* LaunchScreen.storyboard */; };
-		ED8709871EA610EA00CB9BC6 /* GQClient.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709861EA610EA00CB9BC6 /* GQClient.m */; };
+		ED8709871EA610EA00CB9BC6 /* ApolloClient.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709861EA610EA00CB9BC6 /* ApolloClient.m */; };
 		ED87098B1EA611EE00CB9BC6 /* FetchQueryOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87098A1EA611EE00CB9BC6 /* FetchQueryOperation.m */; };
 		ED87098E1EA6122F00CB9BC6 /* ApolloStore.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87098D1EA6122F00CB9BC6 /* ApolloStore.m */; };
-		ED8709981EA63FBC00CB9BC6 /* GQTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709951EA63FBC00CB9BC6 /* GQTuple.m */; };
+		ED8709981EA63FBC00CB9BC6 /* ApolloTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709951EA63FBC00CB9BC6 /* ApolloTuple.m */; };
 		ED87099C1EA6401E00CB9BC6 /* RecordSet.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87099B1EA6401E00CB9BC6 /* RecordSet.m */; };
 		ED8709A01EA6429D00CB9BC6 /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87099F1EA6429D00CB9BC6 /* Record.m */; };
 		ED8709A31EA6443E00CB9BC6 /* GraphQLResultReader.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709A21EA6443E00CB9BC6 /* GraphQLResultReader.m */; };
@@ -72,16 +72,16 @@
 		ED8709791EA610A200CB9BC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED87097C1EA610A200CB9BC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED87097E1EA610A200CB9BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED8709851EA610EA00CB9BC6 /* GQClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQClient.h; sourceTree = "<group>"; };
-		ED8709861EA610EA00CB9BC6 /* GQClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQClient.m; sourceTree = "<group>"; };
+		ED8709851EA610EA00CB9BC6 /* ApolloClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApolloClient.h; sourceTree = "<group>"; };
+		ED8709861EA610EA00CB9BC6 /* ApolloClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApolloClient.m; sourceTree = "<group>"; };
 		ED8709881EA6113600CB9BC6 /* OperationResultHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationResultHandler.h; sourceTree = "<group>"; };
 		ED8709891EA611EE00CB9BC6 /* FetchQueryOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchQueryOperation.h; sourceTree = "<group>"; };
 		ED87098A1EA611EE00CB9BC6 /* FetchQueryOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchQueryOperation.m; sourceTree = "<group>"; };
 		ED87098C1EA6122F00CB9BC6 /* ApolloStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApolloStore.h; sourceTree = "<group>"; };
 		ED87098D1EA6122F00CB9BC6 /* ApolloStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApolloStore.m; sourceTree = "<group>"; };
 		ED87098F1EA63F5E00CB9BC6 /* Apollo_OC.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Apollo_OC.pch; sourceTree = "<group>"; };
-		ED8709941EA63FBC00CB9BC6 /* GQTuple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQTuple.h; sourceTree = "<group>"; };
-		ED8709951EA63FBC00CB9BC6 /* GQTuple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQTuple.m; sourceTree = "<group>"; };
+		ED8709941EA63FBC00CB9BC6 /* ApolloTuple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApolloTuple.h; sourceTree = "<group>"; };
+		ED8709951EA63FBC00CB9BC6 /* ApolloTuple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApolloTuple.m; sourceTree = "<group>"; };
 		ED87099A1EA6401E00CB9BC6 /* RecordSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordSet.h; sourceTree = "<group>"; };
 		ED87099B1EA6401E00CB9BC6 /* RecordSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordSet.m; sourceTree = "<group>"; };
 		ED87099D1EA6412E00CB9BC6 /* CacheKeyForObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheKeyForObject.h; sourceTree = "<group>"; };
@@ -199,8 +199,8 @@
 			children = (
 				ED8709881EA6113600CB9BC6 /* OperationResultHandler.h */,
 				ED87099D1EA6412E00CB9BC6 /* CacheKeyForObject.h */,
-				ED8709851EA610EA00CB9BC6 /* GQClient.h */,
-				ED8709861EA610EA00CB9BC6 /* GQClient.m */,
+				ED8709851EA610EA00CB9BC6 /* ApolloClient.h */,
+				ED8709861EA610EA00CB9BC6 /* ApolloClient.m */,
 				ED8709891EA611EE00CB9BC6 /* FetchQueryOperation.h */,
 				ED87098A1EA611EE00CB9BC6 /* FetchQueryOperation.m */,
 				ED87098C1EA6122F00CB9BC6 /* ApolloStore.h */,
@@ -253,8 +253,8 @@
 		ED8709991EA63FCF00CB9BC6 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				ED8709941EA63FBC00CB9BC6 /* GQTuple.h */,
-				ED8709951EA63FBC00CB9BC6 /* GQTuple.m */,
+				ED8709941EA63FBC00CB9BC6 /* ApolloTuple.h */,
+				ED8709951EA63FBC00CB9BC6 /* ApolloTuple.m */,
 				ED8709CE1EA64DEF00CB9BC6 /* NSHTTPURLResponse+Utilities.h */,
 				ED8709CF1EA64DEF00CB9BC6 /* NSHTTPURLResponse+Utilities.m */,
 				ED6903691EA74C080000A8C9 /* NSArray+Map.h */,
@@ -401,7 +401,7 @@
 				ED6903651EA722AC0000A8C9 /* API.m in Sources */,
 				ED8709D31EA66B0A00CB9BC6 /* AsynchronousOperation.m in Sources */,
 				ED8709C41EA64D8500CB9BC6 /* HTTPNetworkTransport.m in Sources */,
-				ED8709871EA610EA00CB9BC6 /* GQClient.m in Sources */,
+				ED8709871EA610EA00CB9BC6 /* ApolloClient.m in Sources */,
 				ED87099C1EA6401E00CB9BC6 /* RecordSet.m in Sources */,
 				ED8709BE1EA64D4600CB9BC6 /* GraphQLResult.m in Sources */,
 				ED8709C91EA64D9600CB9BC6 /* NSDictionary+JSONEncodable.m in Sources */,
@@ -422,7 +422,7 @@
 				ED8709A31EA6443E00CB9BC6 /* GraphQLResultReader.m in Sources */,
 				ED8709CA1EA64D9600CB9BC6 /* JSONSerializationFormat.m in Sources */,
 				ED8709CD1EA64DC300CB9BC6 /* NetworkTransport.m in Sources */,
-				ED8709981EA63FBC00CB9BC6 /* GQTuple.m in Sources */,
+				ED8709981EA63FBC00CB9BC6 /* ApolloTuple.m in Sources */,
 				ED8709A91EA6478F00CB9BC6 /* JSON.m in Sources */,
 				ED8709721EA610A200CB9BC6 /* FirstViewController.m in Sources */,
 				ED8709B21EA64CF000CB9BC6 /* GraphQLError.m in Sources */,

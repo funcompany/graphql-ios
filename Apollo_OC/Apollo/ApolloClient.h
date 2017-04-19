@@ -1,5 +1,5 @@
 //
-//  GQClient.h
+//  ApolloClient.h
 //  Apollo_OC
 //
 //  Created by Travel Chu on 3/30/17.
@@ -24,7 +24,7 @@ typedef NS_ENUM(NSUInteger, CachePolicy) {
 
 @class FetchQueryOperation;
 @class GraphQLQueryWatcher;
-@interface GQClient : NSObject
+@interface ApolloClient : NSObject
 @property (nonatomic, strong) id<NetworkTransport> networkTransport;
 @property (nonatomic, strong) ApolloStore *store;
 @property (nonatomic) CacheKeyForObject cacheKeyForObject;

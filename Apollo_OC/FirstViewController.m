@@ -8,7 +8,7 @@
 
 #import "FirstViewController.h"
 #import "API.h"
-#import "GQClient.h"
+#import "ApolloClient.h"
 
 @interface FirstViewController ()
 
@@ -29,7 +29,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
   [super viewDidAppear:animated];
-  GQClient *client = [[GQClient alloc] initWithUrl:[NSURL URLWithString:@"http://10.0.1.58:8080/graphql"]];
+  ApolloClient *client = [[ApolloClient alloc] initWithUrl:[NSURL URLWithString:@"http://10.0.1.58:8080/graphql"]];
   [client watch:[[StarshipQuery alloc] init] resultHandler:^(GraphQLResult *result, NSError *error) {
     
   }];
