@@ -34,6 +34,8 @@
       return (object ?: dataEntry)[field.responseName];
     }];
     
+    reader.dataEntry = dataEntry;
+    
     GraphQLResultNormalizer *normalizer = [[GraphQLResultNormalizer alloc] initWithRootKey:[ApolloStore rootKeyForOperation:self.operation]];
     normalizer.cacheKeyForObject = cacheKeyForObject;
     reader.delegate = normalizer;

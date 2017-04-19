@@ -19,8 +19,7 @@
   NSMutableDictionary *jsonObject = [NSMutableDictionary dictionary];
   for (NSString *key in self.allKeys) {
     id value = self[key];
-    if ([value conformsToProtocol:@protocol(JSONEncodable)]) {
-#warning check value isNil?
+    if (value && [value conformsToProtocol:@protocol(JSONEncodable)]) {
       jsonObject[key] = [(id<JSONEncodable>)value jsonValue];
     }
   }

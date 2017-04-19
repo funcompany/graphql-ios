@@ -78,7 +78,6 @@
   } else {
     cacheKey = [self.path componentsJoinedByString:@"."];
   }
-#warning check
   [self.recordStack addObject:self.currentRecord];
   self.currentRecord = [[Record alloc] initWithKey:cacheKey fields:nil];
 }

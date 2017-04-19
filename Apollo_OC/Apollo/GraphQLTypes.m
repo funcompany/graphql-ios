@@ -10,6 +10,7 @@
 #import "NSDictionary+JSONEncodable.h"
 
 @implementation GraphQLMapConvertible
+@dynamic jsonValue;
 
 - (JSONValue)jsonValue {
   return self.graphQLMap.jsonValue;

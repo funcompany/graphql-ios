@@ -24,7 +24,6 @@
 }
 
 - (instancetype)initWithReader:(GraphQLResultReader *)reader ifTypeMatches:(NSString *)typeName {
-#warning check
   if (![self.possibleTypes containsObject:typeName]) {
     return nil;
   }

@@ -10,7 +10,9 @@
 		29F6D3A01F68F7BBF71B7239 /* libPods-Apollo_OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 941B04D397EF3452436A3031 /* libPods-Apollo_OC.a */; };
 		ED6903621EA70EB50000A8C9 /* JSONStandardTypeConversions.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6903611EA70EB50000A8C9 /* JSONStandardTypeConversions.m */; };
 		ED6903651EA722AC0000A8C9 /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6903641EA722AC0000A8C9 /* API.m */; };
-		ED6903681EA72A600000A8C9 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6903671EA72A600000A8C9 /* Utilities.m */; };
+		ED69036B1EA74C080000A8C9 /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = ED69036A1EA74C080000A8C9 /* NSArray+Map.m */; };
+		ED69036F1EA74C7A0000A8C9 /* NSMutableArray+Concat.m in Sources */ = {isa = PBXBuildFile; fileRef = ED69036E1EA74C7A0000A8C9 /* NSMutableArray+Concat.m */; };
+		ED6903721EA74C920000A8C9 /* NSSet+Disjoint.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6903711EA74C920000A8C9 /* NSSet+Disjoint.m */; };
 		ED87096C1EA610A200CB9BC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87096B1EA610A200CB9BC6 /* main.m */; };
 		ED87096F1EA610A200CB9BC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87096E1EA610A200CB9BC6 /* AppDelegate.m */; };
 		ED8709721EA610A200CB9BC6 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709711EA610A200CB9BC6 /* FirstViewController.m */; };
@@ -21,8 +23,6 @@
 		ED8709871EA610EA00CB9BC6 /* GQClient.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709861EA610EA00CB9BC6 /* GQClient.m */; };
 		ED87098B1EA611EE00CB9BC6 /* FetchQueryOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87098A1EA611EE00CB9BC6 /* FetchQueryOperation.m */; };
 		ED87098E1EA6122F00CB9BC6 /* ApolloStore.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87098D1EA6122F00CB9BC6 /* ApolloStore.m */; };
-		ED8709961EA63FBC00CB9BC6 /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709911EA63FBC00CB9BC6 /* NSArray+Map.m */; };
-		ED8709971EA63FBC00CB9BC6 /* NSMutableArray+Concat.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709931EA63FBC00CB9BC6 /* NSMutableArray+Concat.m */; };
 		ED8709981EA63FBC00CB9BC6 /* GQTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709951EA63FBC00CB9BC6 /* GQTuple.m */; };
 		ED87099C1EA6401E00CB9BC6 /* RecordSet.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87099B1EA6401E00CB9BC6 /* RecordSet.m */; };
 		ED8709A01EA6429D00CB9BC6 /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87099F1EA6429D00CB9BC6 /* Record.m */; };
@@ -43,7 +43,6 @@
 		ED8709CD1EA64DC300CB9BC6 /* NetworkTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709CC1EA64DC300CB9BC6 /* NetworkTransport.m */; };
 		ED8709D01EA64DEF00CB9BC6 /* NSHTTPURLResponse+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709CF1EA64DEF00CB9BC6 /* NSHTTPURLResponse+Utilities.m */; };
 		ED8709D31EA66B0A00CB9BC6 /* AsynchronousOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709D21EA66B0A00CB9BC6 /* AsynchronousOperation.m */; };
-		ED8709D61EA66F9E00CB9BC6 /* NSSet+Disjoint.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709D51EA66F9E00CB9BC6 /* NSSet+Disjoint.m */; };
 		ED8709D91EA66FBA00CB9BC6 /* Cancellable.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709D81EA66FBA00CB9BC6 /* Cancellable.m */; };
 /* End PBXBuildFile section */
 
@@ -55,8 +54,13 @@
 		ED6903611EA70EB50000A8C9 /* JSONStandardTypeConversions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONStandardTypeConversions.m; sourceTree = "<group>"; };
 		ED6903631EA722AC0000A8C9 /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
 		ED6903641EA722AC0000A8C9 /* API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = API.m; sourceTree = "<group>"; };
-		ED6903661EA72A600000A8C9 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
-		ED6903671EA72A600000A8C9 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		ED6903691EA74C080000A8C9 /* NSArray+Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Map.h"; sourceTree = "<group>"; };
+		ED69036A1EA74C080000A8C9 /* NSArray+Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Map.m"; sourceTree = "<group>"; };
+		ED69036C1EA74C220000A8C9 /* Apollo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Apollo.h; sourceTree = "<group>"; };
+		ED69036D1EA74C7A0000A8C9 /* NSMutableArray+Concat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Concat.h"; sourceTree = "<group>"; };
+		ED69036E1EA74C7A0000A8C9 /* NSMutableArray+Concat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Concat.m"; sourceTree = "<group>"; };
+		ED6903701EA74C920000A8C9 /* NSSet+Disjoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+Disjoint.h"; sourceTree = "<group>"; };
+		ED6903711EA74C920000A8C9 /* NSSet+Disjoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+Disjoint.m"; sourceTree = "<group>"; };
 		ED8709671EA610A200CB9BC6 /* Apollo_OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apollo_OC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED87096B1EA610A200CB9BC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED87096D1EA610A200CB9BC6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,10 +81,6 @@
 		ED87098C1EA6122F00CB9BC6 /* ApolloStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApolloStore.h; sourceTree = "<group>"; };
 		ED87098D1EA6122F00CB9BC6 /* ApolloStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApolloStore.m; sourceTree = "<group>"; };
 		ED87098F1EA63F5E00CB9BC6 /* Apollo_OC.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Apollo_OC.pch; sourceTree = "<group>"; };
-		ED8709901EA63FBC00CB9BC6 /* NSArray+Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Map.h"; sourceTree = "<group>"; };
-		ED8709911EA63FBC00CB9BC6 /* NSArray+Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Map.m"; sourceTree = "<group>"; };
-		ED8709921EA63FBC00CB9BC6 /* NSMutableArray+Concat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Concat.h"; sourceTree = "<group>"; };
-		ED8709931EA63FBC00CB9BC6 /* NSMutableArray+Concat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Concat.m"; sourceTree = "<group>"; };
 		ED8709941EA63FBC00CB9BC6 /* GQTuple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQTuple.h; sourceTree = "<group>"; };
 		ED8709951EA63FBC00CB9BC6 /* GQTuple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQTuple.m; sourceTree = "<group>"; };
 		ED87099A1EA6401E00CB9BC6 /* RecordSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordSet.h; sourceTree = "<group>"; };
@@ -122,8 +122,6 @@
 		ED8709CF1EA64DEF00CB9BC6 /* NSHTTPURLResponse+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSHTTPURLResponse+Utilities.m"; sourceTree = "<group>"; };
 		ED8709D11EA66B0A00CB9BC6 /* AsynchronousOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsynchronousOperation.h; sourceTree = "<group>"; };
 		ED8709D21EA66B0A00CB9BC6 /* AsynchronousOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsynchronousOperation.m; sourceTree = "<group>"; };
-		ED8709D41EA66F9E00CB9BC6 /* NSSet+Disjoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+Disjoint.h"; sourceTree = "<group>"; };
-		ED8709D51EA66F9E00CB9BC6 /* NSSet+Disjoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+Disjoint.m"; sourceTree = "<group>"; };
 		ED8709D71EA66FBA00CB9BC6 /* Cancellable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cancellable.h; sourceTree = "<group>"; };
 		ED8709D81EA66FBA00CB9BC6 /* Cancellable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cancellable.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,6 +198,7 @@
 		ED8709841EA610CC00CB9BC6 /* Apollo */ = {
 			isa = PBXGroup;
 			children = (
+				ED69036C1EA74C220000A8C9 /* Apollo.h */,
 				ED8709881EA6113600CB9BC6 /* OperationResultHandler.h */,
 				ED87099D1EA6412E00CB9BC6 /* CacheKeyForObject.h */,
 				ED8709851EA610EA00CB9BC6 /* GQClient.h */,
@@ -256,18 +255,16 @@
 		ED8709991EA63FCF00CB9BC6 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				ED6903661EA72A600000A8C9 /* Utilities.h */,
-				ED6903671EA72A600000A8C9 /* Utilities.m */,
-				ED8709D41EA66F9E00CB9BC6 /* NSSet+Disjoint.h */,
-				ED8709D51EA66F9E00CB9BC6 /* NSSet+Disjoint.m */,
-				ED8709901EA63FBC00CB9BC6 /* NSArray+Map.h */,
-				ED8709911EA63FBC00CB9BC6 /* NSArray+Map.m */,
-				ED8709921EA63FBC00CB9BC6 /* NSMutableArray+Concat.h */,
-				ED8709931EA63FBC00CB9BC6 /* NSMutableArray+Concat.m */,
 				ED8709941EA63FBC00CB9BC6 /* GQTuple.h */,
 				ED8709951EA63FBC00CB9BC6 /* GQTuple.m */,
 				ED8709CE1EA64DEF00CB9BC6 /* NSHTTPURLResponse+Utilities.h */,
 				ED8709CF1EA64DEF00CB9BC6 /* NSHTTPURLResponse+Utilities.m */,
+				ED6903691EA74C080000A8C9 /* NSArray+Map.h */,
+				ED69036A1EA74C080000A8C9 /* NSArray+Map.m */,
+				ED69036D1EA74C7A0000A8C9 /* NSMutableArray+Concat.h */,
+				ED69036E1EA74C7A0000A8C9 /* NSMutableArray+Concat.m */,
+				ED6903701EA74C920000A8C9 /* NSSet+Disjoint.h */,
+				ED6903711EA74C920000A8C9 /* NSSet+Disjoint.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -409,12 +406,12 @@
 				ED8709871EA610EA00CB9BC6 /* GQClient.m in Sources */,
 				ED87099C1EA6401E00CB9BC6 /* RecordSet.m in Sources */,
 				ED8709BE1EA64D4600CB9BC6 /* GraphQLResult.m in Sources */,
-				ED8709961EA63FBC00CB9BC6 /* NSArray+Map.m in Sources */,
 				ED8709C91EA64D9600CB9BC6 /* NSDictionary+JSONEncodable.m in Sources */,
 				ED8709D01EA64DEF00CB9BC6 /* NSHTTPURLResponse+Utilities.m in Sources */,
 				ED8709B71EA64D1700CB9BC6 /* GraphQLOperation.m in Sources */,
 				ED8709751EA610A200CB9BC6 /* SecondViewController.m in Sources */,
 				ED8709D91EA66FBA00CB9BC6 /* Cancellable.m in Sources */,
+				ED69036B1EA74C080000A8C9 /* NSArray+Map.m in Sources */,
 				ED87096F1EA610A200CB9BC6 /* AppDelegate.m in Sources */,
 				ED8709BB1EA64D3D00CB9BC6 /* GraphQLResponse.m in Sources */,
 				ED8709A61EA6471D00CB9BC6 /* GraphQLTypes.m in Sources */,
@@ -423,20 +420,19 @@
 				ED8709AC1EA6481000CB9BC6 /* Field.m in Sources */,
 				ED87098B1EA611EE00CB9BC6 /* FetchQueryOperation.m in Sources */,
 				ED8709C11EA64D5B00CB9BC6 /* GraphQLResultNormalizer.m in Sources */,
+				ED6903721EA74C920000A8C9 /* NSSet+Disjoint.m in Sources */,
 				ED8709A31EA6443E00CB9BC6 /* GraphQLResultReader.m in Sources */,
 				ED8709CA1EA64D9600CB9BC6 /* JSONSerializationFormat.m in Sources */,
-				ED8709971EA63FBC00CB9BC6 /* NSMutableArray+Concat.m in Sources */,
 				ED8709CD1EA64DC300CB9BC6 /* NetworkTransport.m in Sources */,
 				ED8709981EA63FBC00CB9BC6 /* GQTuple.m in Sources */,
-				ED8709D61EA66F9E00CB9BC6 /* NSSet+Disjoint.m in Sources */,
 				ED8709A91EA6478F00CB9BC6 /* JSON.m in Sources */,
 				ED8709721EA610A200CB9BC6 /* FirstViewController.m in Sources */,
 				ED8709B21EA64CF000CB9BC6 /* GraphQLError.m in Sources */,
 				ED87098E1EA6122F00CB9BC6 /* ApolloStore.m in Sources */,
 				ED8709A01EA6429D00CB9BC6 /* Record.m in Sources */,
 				ED6903621EA70EB50000A8C9 /* JSONStandardTypeConversions.m in Sources */,
-				ED6903681EA72A600000A8C9 /* Utilities.m in Sources */,
 				ED87096C1EA610A200CB9BC6 /* main.m in Sources */,
+				ED69036F1EA74C7A0000A8C9 /* NSMutableArray+Concat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

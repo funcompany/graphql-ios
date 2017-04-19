@@ -9,8 +9,8 @@
 #import "GQClient.h"
 
 @interface GraphQLQueryWatcher : ApolloStoreSubscriber <Cancellable>
-#warning weak?
-@property (nonatomic, strong) GQClient *client;
+
+@property (nonatomic, weak) GQClient *client;
 @property (nonatomic, strong) GraphQLQuery *query;
 @property (nonatomic) dispatch_queue_t handlerQueue;
 @property (nonatomic) OperationResultHandler resultHandler;

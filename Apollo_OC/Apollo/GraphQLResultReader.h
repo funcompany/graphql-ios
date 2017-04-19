@@ -31,6 +31,7 @@ typedef JSONValue (^GraphQLResolver)(Field *field, NSDictionary <JSONObject> *ob
 @end
 
 @interface GraphQLResultReader : NSObject
+@property (nonatomic, strong) NSDictionary <JSONObject> *dataEntry;
 @property (nonatomic, strong) NSDictionary <GraphQLMap> *variables;
 @property (nonatomic, strong) GraphQLResolver resolver;
 @property (nonatomic, weak) id<GraphQLResultReaderDelegate> delegate;

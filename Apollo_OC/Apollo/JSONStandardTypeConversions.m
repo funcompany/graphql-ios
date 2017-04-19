@@ -10,7 +10,8 @@
 
 @implementation NSString (JSON)
 @dynamic jsonValue;
-
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wobjc-designated-initializers"
 - (instancetype)init:(JSONValue)value {
   if (![value isKindOfClass:[NSString class]]) {
     NSString *info = [NSString stringWithFormat:@"JSONDecodingError.couldNotConvert(value: %@, to: %@)", value, NSStringFromClass([NSString class])];
@@ -23,5 +24,5 @@
 - (JSONValue)jsonValue {
   return self;
 }
-
+#pragma clang diagnostic pop
 @end

@@ -3,7 +3,7 @@
 //  Apollo_OC
 //
 //  Created by Travel Chu on 4/17/17.
-//  Copyright © 2017 Midtown Doornail. All rights reserved.
+//  Copyright © 2017 demo. All rights reserved.
 //
 
 #import "NSSet+Disjoint.h"
