@@ -7,6 +7,7 @@
 //
 
 #import "RecordSet.h"
+#import "NSArray+Map.h"
 
 @implementation RecordSet
 

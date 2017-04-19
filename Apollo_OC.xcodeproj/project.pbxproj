@@ -56,7 +56,6 @@
 		ED6903641EA722AC0000A8C9 /* API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = API.m; sourceTree = "<group>"; };
 		ED6903691EA74C080000A8C9 /* NSArray+Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Map.h"; sourceTree = "<group>"; };
 		ED69036A1EA74C080000A8C9 /* NSArray+Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Map.m"; sourceTree = "<group>"; };
-		ED69036C1EA74C220000A8C9 /* Apollo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Apollo.h; sourceTree = "<group>"; };
 		ED69036D1EA74C7A0000A8C9 /* NSMutableArray+Concat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Concat.h"; sourceTree = "<group>"; };
 		ED69036E1EA74C7A0000A8C9 /* NSMutableArray+Concat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Concat.m"; sourceTree = "<group>"; };
 		ED6903701EA74C920000A8C9 /* NSSet+Disjoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+Disjoint.h"; sourceTree = "<group>"; };
@@ -198,7 +197,6 @@
 		ED8709841EA610CC00CB9BC6 /* Apollo */ = {
 			isa = PBXGroup;
 			children = (
-				ED69036C1EA74C220000A8C9 /* Apollo.h */,
 				ED8709881EA6113600CB9BC6 /* OperationResultHandler.h */,
 				ED87099D1EA6412E00CB9BC6 /* CacheKeyForObject.h */,
 				ED8709851EA610EA00CB9BC6 /* GQClient.h */,

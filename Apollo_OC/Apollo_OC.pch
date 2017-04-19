@@ -15,8 +15,6 @@
 //#define JSONValue id
 //#define GraphQLID NSString
 
-#import "GQTuple.h"
-#import "NSArray+Map.h"
 #import "YYModel.h"
 
 #endif /* Apollo_OC_pch */

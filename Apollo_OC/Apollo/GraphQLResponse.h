@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "GraphQLOperation.h"
 #import "CacheKeyForObject.h"
+#import "GQTuple.h"
 
 @interface GraphQLResponse : GraphQLOperation
 @property (nonatomic, strong) GraphQLOperation *operation;

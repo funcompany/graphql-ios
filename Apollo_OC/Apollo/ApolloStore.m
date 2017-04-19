@@ -12,6 +12,7 @@
 #import "CacheKeyForObject.h"
 #import "GraphQLResultReader.h"
 #import "GraphQLResultNormalizer.h"
+#import "NSArray+Map.h"
 
 @implementation ApolloStore
 

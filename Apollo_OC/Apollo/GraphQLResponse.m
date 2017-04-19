@@ -11,6 +11,7 @@
 #import "GraphQLResultNormalizer.h"
 #import "ApolloStore.h"
 #import "GraphQLResult.h"
+#import "NSArray+Map.h"
 
 @implementation GraphQLResponse
 
