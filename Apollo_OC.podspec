@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Apollo_OC"
-  s.version      = "1"
+  s.version      = "0.0.1"
   s.summary      = "Apollo_OC."
 
   # This description is used to generate tags and improve search results.
