@@ -7,6 +7,8 @@
 //
 
 #import "FirstViewController.h"
+#import "API.h"
+#import "GQClient.h"
 
 @interface FirstViewController ()
 
@@ -23,6 +25,17 @@
 - (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];
   // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+  [super viewDidAppear:animated];
+  GQClient *client = [[GQClient alloc] initWithUrl:[NSURL URLWithString:@"http://10.0.1.58:8080/graphql"]];
+  [client watch:[[StarshipQuery alloc] init] resultHandler:^(GraphQLResult *result, NSError *error) {
+    
+  }];
+  
+  NSArray *arr = @[@1,@2,@3,@4,@5];
+  NSLog(@"%@", [arr subarrayWithRange:NSMakeRange(3, 2)]);
 }
 
 

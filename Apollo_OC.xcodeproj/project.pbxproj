@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29F6D3A01F68F7BBF71B7239 /* libPods-Apollo_OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 941B04D397EF3452436A3031 /* libPods-Apollo_OC.a */; };
+		ED6903621EA70EB50000A8C9 /* JSONStandardTypeConversions.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6903611EA70EB50000A8C9 /* JSONStandardTypeConversions.m */; };
+		ED6903651EA722AC0000A8C9 /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6903641EA722AC0000A8C9 /* API.m */; };
+		ED6903681EA72A600000A8C9 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6903671EA72A600000A8C9 /* Utilities.m */; };
 		ED87096C1EA610A200CB9BC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87096B1EA610A200CB9BC6 /* main.m */; };
 		ED87096F1EA610A200CB9BC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87096E1EA610A200CB9BC6 /* AppDelegate.m */; };
 		ED8709721EA610A200CB9BC6 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709711EA610A200CB9BC6 /* FirstViewController.m */; };
@@ -14,9 +18,45 @@
 		ED8709781EA610A200CB9BC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED8709761EA610A200CB9BC6 /* Main.storyboard */; };
 		ED87097A1EA610A200CB9BC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED8709791EA610A200CB9BC6 /* Assets.xcassets */; };
 		ED87097D1EA610A200CB9BC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED87097B1EA610A200CB9BC6 /* LaunchScreen.storyboard */; };
+		ED8709871EA610EA00CB9BC6 /* GQClient.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709861EA610EA00CB9BC6 /* GQClient.m */; };
+		ED87098B1EA611EE00CB9BC6 /* FetchQueryOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87098A1EA611EE00CB9BC6 /* FetchQueryOperation.m */; };
+		ED87098E1EA6122F00CB9BC6 /* ApolloStore.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87098D1EA6122F00CB9BC6 /* ApolloStore.m */; };
+		ED8709961EA63FBC00CB9BC6 /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709911EA63FBC00CB9BC6 /* NSArray+Map.m */; };
+		ED8709971EA63FBC00CB9BC6 /* NSMutableArray+Concat.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709931EA63FBC00CB9BC6 /* NSMutableArray+Concat.m */; };
+		ED8709981EA63FBC00CB9BC6 /* GQTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709951EA63FBC00CB9BC6 /* GQTuple.m */; };
+		ED87099C1EA6401E00CB9BC6 /* RecordSet.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87099B1EA6401E00CB9BC6 /* RecordSet.m */; };
+		ED8709A01EA6429D00CB9BC6 /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87099F1EA6429D00CB9BC6 /* Record.m */; };
+		ED8709A31EA6443E00CB9BC6 /* GraphQLResultReader.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709A21EA6443E00CB9BC6 /* GraphQLResultReader.m */; };
+		ED8709A61EA6471D00CB9BC6 /* GraphQLTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709A51EA6471D00CB9BC6 /* GraphQLTypes.m */; };
+		ED8709A91EA6478F00CB9BC6 /* JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709A81EA6478F00CB9BC6 /* JSON.m */; };
+		ED8709AC1EA6481000CB9BC6 /* Field.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709AB1EA6481000CB9BC6 /* Field.m */; };
+		ED8709AF1EA64CA900CB9BC6 /* Fragments.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709AE1EA64CA900CB9BC6 /* Fragments.m */; };
+		ED8709B21EA64CF000CB9BC6 /* GraphQLError.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709B11EA64CEF00CB9BC6 /* GraphQLError.m */; };
+		ED8709B71EA64D1700CB9BC6 /* GraphQLOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709B41EA64D1700CB9BC6 /* GraphQLOperation.m */; };
+		ED8709B81EA64D1700CB9BC6 /* GraphQLQueryWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709B61EA64D1700CB9BC6 /* GraphQLQueryWatcher.m */; };
+		ED8709BB1EA64D3D00CB9BC6 /* GraphQLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709BA1EA64D3D00CB9BC6 /* GraphQLResponse.m */; };
+		ED8709BE1EA64D4600CB9BC6 /* GraphQLResult.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709BD1EA64D4600CB9BC6 /* GraphQLResult.m */; };
+		ED8709C11EA64D5B00CB9BC6 /* GraphQLResultNormalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709C01EA64D5B00CB9BC6 /* GraphQLResultNormalizer.m */; };
+		ED8709C41EA64D8500CB9BC6 /* HTTPNetworkTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709C31EA64D8500CB9BC6 /* HTTPNetworkTransport.m */; };
+		ED8709C91EA64D9600CB9BC6 /* NSDictionary+JSONEncodable.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709C61EA64D9600CB9BC6 /* NSDictionary+JSONEncodable.m */; };
+		ED8709CA1EA64D9600CB9BC6 /* JSONSerializationFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709C81EA64D9600CB9BC6 /* JSONSerializationFormat.m */; };
+		ED8709CD1EA64DC300CB9BC6 /* NetworkTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709CC1EA64DC300CB9BC6 /* NetworkTransport.m */; };
+		ED8709D01EA64DEF00CB9BC6 /* NSHTTPURLResponse+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709CF1EA64DEF00CB9BC6 /* NSHTTPURLResponse+Utilities.m */; };
+		ED8709D31EA66B0A00CB9BC6 /* AsynchronousOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709D21EA66B0A00CB9BC6 /* AsynchronousOperation.m */; };
+		ED8709D61EA66F9E00CB9BC6 /* NSSet+Disjoint.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709D51EA66F9E00CB9BC6 /* NSSet+Disjoint.m */; };
+		ED8709D91EA66FBA00CB9BC6 /* Cancellable.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8709D81EA66FBA00CB9BC6 /* Cancellable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		421EFCEF52199683BB61B243 /* Pods-Apollo_OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apollo_OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-Apollo_OC/Pods-Apollo_OC.release.xcconfig"; sourceTree = "<group>"; };
+		941B04D397EF3452436A3031 /* libPods-Apollo_OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Apollo_OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98F61DE28BF357E0C8CA78D1 /* Pods-Apollo_OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apollo_OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Apollo_OC/Pods-Apollo_OC.debug.xcconfig"; sourceTree = "<group>"; };
+		ED6903601EA70EB50000A8C9 /* JSONStandardTypeConversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONStandardTypeConversions.h; sourceTree = "<group>"; };
+		ED6903611EA70EB50000A8C9 /* JSONStandardTypeConversions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONStandardTypeConversions.m; sourceTree = "<group>"; };
+		ED6903631EA722AC0000A8C9 /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		ED6903641EA722AC0000A8C9 /* API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = API.m; sourceTree = "<group>"; };
+		ED6903661EA72A600000A8C9 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		ED6903671EA72A600000A8C9 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 		ED8709671EA610A200CB9BC6 /* Apollo_OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apollo_OC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED87096B1EA610A200CB9BC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED87096D1EA610A200CB9BC6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -29,6 +69,63 @@
 		ED8709791EA610A200CB9BC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED87097C1EA610A200CB9BC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED87097E1EA610A200CB9BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED8709851EA610EA00CB9BC6 /* GQClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQClient.h; sourceTree = "<group>"; };
+		ED8709861EA610EA00CB9BC6 /* GQClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQClient.m; sourceTree = "<group>"; };
+		ED8709881EA6113600CB9BC6 /* OperationResultHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationResultHandler.h; sourceTree = "<group>"; };
+		ED8709891EA611EE00CB9BC6 /* FetchQueryOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchQueryOperation.h; sourceTree = "<group>"; };
+		ED87098A1EA611EE00CB9BC6 /* FetchQueryOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchQueryOperation.m; sourceTree = "<group>"; };
+		ED87098C1EA6122F00CB9BC6 /* ApolloStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApolloStore.h; sourceTree = "<group>"; };
+		ED87098D1EA6122F00CB9BC6 /* ApolloStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApolloStore.m; sourceTree = "<group>"; };
+		ED87098F1EA63F5E00CB9BC6 /* Apollo_OC.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Apollo_OC.pch; sourceTree = "<group>"; };
+		ED8709901EA63FBC00CB9BC6 /* NSArray+Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Map.h"; sourceTree = "<group>"; };
+		ED8709911EA63FBC00CB9BC6 /* NSArray+Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Map.m"; sourceTree = "<group>"; };
+		ED8709921EA63FBC00CB9BC6 /* NSMutableArray+Concat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Concat.h"; sourceTree = "<group>"; };
+		ED8709931EA63FBC00CB9BC6 /* NSMutableArray+Concat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Concat.m"; sourceTree = "<group>"; };
+		ED8709941EA63FBC00CB9BC6 /* GQTuple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQTuple.h; sourceTree = "<group>"; };
+		ED8709951EA63FBC00CB9BC6 /* GQTuple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQTuple.m; sourceTree = "<group>"; };
+		ED87099A1EA6401E00CB9BC6 /* RecordSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordSet.h; sourceTree = "<group>"; };
+		ED87099B1EA6401E00CB9BC6 /* RecordSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordSet.m; sourceTree = "<group>"; };
+		ED87099D1EA6412E00CB9BC6 /* CacheKeyForObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheKeyForObject.h; sourceTree = "<group>"; };
+		ED87099E1EA6429D00CB9BC6 /* Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Record.h; sourceTree = "<group>"; };
+		ED87099F1EA6429D00CB9BC6 /* Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Record.m; sourceTree = "<group>"; };
+		ED8709A11EA6443E00CB9BC6 /* GraphQLResultReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphQLResultReader.h; sourceTree = "<group>"; };
+		ED8709A21EA6443E00CB9BC6 /* GraphQLResultReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphQLResultReader.m; sourceTree = "<group>"; };
+		ED8709A41EA6471D00CB9BC6 /* GraphQLTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphQLTypes.h; sourceTree = "<group>"; };
+		ED8709A51EA6471D00CB9BC6 /* GraphQLTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphQLTypes.m; sourceTree = "<group>"; };
+		ED8709A71EA6478F00CB9BC6 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		ED8709A81EA6478F00CB9BC6 /* JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSON.m; sourceTree = "<group>"; };
+		ED8709AA1EA6481000CB9BC6 /* Field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Field.h; sourceTree = "<group>"; };
+		ED8709AB1EA6481000CB9BC6 /* Field.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Field.m; sourceTree = "<group>"; };
+		ED8709AD1EA64CA900CB9BC6 /* Fragments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fragments.h; sourceTree = "<group>"; };
+		ED8709AE1EA64CA900CB9BC6 /* Fragments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fragments.m; sourceTree = "<group>"; };
+		ED8709B01EA64CEF00CB9BC6 /* GraphQLError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphQLError.h; sourceTree = "<group>"; };
+		ED8709B11EA64CEF00CB9BC6 /* GraphQLError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphQLError.m; sourceTree = "<group>"; };
+		ED8709B31EA64D1700CB9BC6 /* GraphQLOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphQLOperation.h; sourceTree = "<group>"; };
+		ED8709B41EA64D1700CB9BC6 /* GraphQLOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphQLOperation.m; sourceTree = "<group>"; };
+		ED8709B51EA64D1700CB9BC6 /* GraphQLQueryWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphQLQueryWatcher.h; sourceTree = "<group>"; };
+		ED8709B61EA64D1700CB9BC6 /* GraphQLQueryWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphQLQueryWatcher.m; sourceTree = "<group>"; };
+		ED8709B91EA64D3D00CB9BC6 /* GraphQLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphQLResponse.h; sourceTree = "<group>"; };
+		ED8709BA1EA64D3D00CB9BC6 /* GraphQLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphQLResponse.m; sourceTree = "<group>"; };
+		ED8709BC1EA64D4600CB9BC6 /* GraphQLResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphQLResult.h; sourceTree = "<group>"; };
+		ED8709BD1EA64D4600CB9BC6 /* GraphQLResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphQLResult.m; sourceTree = "<group>"; };
+		ED8709BF1EA64D5B00CB9BC6 /* GraphQLResultNormalizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphQLResultNormalizer.h; sourceTree = "<group>"; };
+		ED8709C01EA64D5B00CB9BC6 /* GraphQLResultNormalizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphQLResultNormalizer.m; sourceTree = "<group>"; };
+		ED8709C21EA64D8500CB9BC6 /* HTTPNetworkTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPNetworkTransport.h; sourceTree = "<group>"; };
+		ED8709C31EA64D8500CB9BC6 /* HTTPNetworkTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPNetworkTransport.m; sourceTree = "<group>"; };
+		ED8709C51EA64D9600CB9BC6 /* NSDictionary+JSONEncodable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSONEncodable.h"; sourceTree = "<group>"; };
+		ED8709C61EA64D9600CB9BC6 /* NSDictionary+JSONEncodable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSONEncodable.m"; sourceTree = "<group>"; };
+		ED8709C71EA64D9600CB9BC6 /* JSONSerializationFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONSerializationFormat.h; sourceTree = "<group>"; };
+		ED8709C81EA64D9600CB9BC6 /* JSONSerializationFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONSerializationFormat.m; sourceTree = "<group>"; };
+		ED8709CB1EA64DC300CB9BC6 /* NetworkTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTransport.h; sourceTree = "<group>"; };
+		ED8709CC1EA64DC300CB9BC6 /* NetworkTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTransport.m; sourceTree = "<group>"; };
+		ED8709CE1EA64DEF00CB9BC6 /* NSHTTPURLResponse+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSHTTPURLResponse+Utilities.h"; sourceTree = "<group>"; };
+		ED8709CF1EA64DEF00CB9BC6 /* NSHTTPURLResponse+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSHTTPURLResponse+Utilities.m"; sourceTree = "<group>"; };
+		ED8709D11EA66B0A00CB9BC6 /* AsynchronousOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsynchronousOperation.h; sourceTree = "<group>"; };
+		ED8709D21EA66B0A00CB9BC6 /* AsynchronousOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsynchronousOperation.m; sourceTree = "<group>"; };
+		ED8709D41EA66F9E00CB9BC6 /* NSSet+Disjoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+Disjoint.h"; sourceTree = "<group>"; };
+		ED8709D51EA66F9E00CB9BC6 /* NSSet+Disjoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+Disjoint.m"; sourceTree = "<group>"; };
+		ED8709D71EA66FBA00CB9BC6 /* Cancellable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cancellable.h; sourceTree = "<group>"; };
+		ED8709D81EA66FBA00CB9BC6 /* Cancellable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cancellable.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +133,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29F6D3A01F68F7BBF71B7239 /* libPods-Apollo_OC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		771C40CCBC07547C26783C72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98F61DE28BF357E0C8CA78D1 /* Pods-Apollo_OC.debug.xcconfig */,
+				421EFCEF52199683BB61B243 /* Pods-Apollo_OC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ED87095E1EA610A200CB9BC6 = {
 			isa = PBXGroup;
 			children = (
 				ED8709691EA610A200CB9BC6 /* Apollo_OC */,
 				ED8709681EA610A200CB9BC6 /* Products */,
+				771C40CCBC07547C26783C72 /* Pods */,
+				F88877D0782A4CD6B54711FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +170,7 @@
 		ED8709691EA610A200CB9BC6 /* Apollo_OC */ = {
 			isa = PBXGroup;
 			children = (
+				ED87098F1EA63F5E00CB9BC6 /* Apollo_OC.pch */,
 				ED87096D1EA610A200CB9BC6 /* AppDelegate.h */,
 				ED87096E1EA610A200CB9BC6 /* AppDelegate.m */,
 				ED8709701EA610A200CB9BC6 /* FirstViewController.h */,
@@ -68,6 +178,9 @@
 				ED8709731EA610A200CB9BC6 /* SecondViewController.h */,
 				ED8709741EA610A200CB9BC6 /* SecondViewController.m */,
 				ED8709761EA610A200CB9BC6 /* Main.storyboard */,
+				ED6903631EA722AC0000A8C9 /* API.h */,
+				ED6903641EA722AC0000A8C9 /* API.m */,
+				ED8709841EA610CC00CB9BC6 /* Apollo */,
 				ED8709791EA610A200CB9BC6 /* Assets.xcassets */,
 				ED87097B1EA610A200CB9BC6 /* LaunchScreen.storyboard */,
 				ED87097E1EA610A200CB9BC6 /* Info.plist */,
@@ -84,6 +197,89 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		ED8709841EA610CC00CB9BC6 /* Apollo */ = {
+			isa = PBXGroup;
+			children = (
+				ED8709881EA6113600CB9BC6 /* OperationResultHandler.h */,
+				ED87099D1EA6412E00CB9BC6 /* CacheKeyForObject.h */,
+				ED8709851EA610EA00CB9BC6 /* GQClient.h */,
+				ED8709861EA610EA00CB9BC6 /* GQClient.m */,
+				ED8709891EA611EE00CB9BC6 /* FetchQueryOperation.h */,
+				ED87098A1EA611EE00CB9BC6 /* FetchQueryOperation.m */,
+				ED87098C1EA6122F00CB9BC6 /* ApolloStore.h */,
+				ED87098D1EA6122F00CB9BC6 /* ApolloStore.m */,
+				ED8709D11EA66B0A00CB9BC6 /* AsynchronousOperation.h */,
+				ED8709D21EA66B0A00CB9BC6 /* AsynchronousOperation.m */,
+				ED8709AA1EA6481000CB9BC6 /* Field.h */,
+				ED8709AB1EA6481000CB9BC6 /* Field.m */,
+				ED8709AD1EA64CA900CB9BC6 /* Fragments.h */,
+				ED8709AE1EA64CA900CB9BC6 /* Fragments.m */,
+				ED8709B01EA64CEF00CB9BC6 /* GraphQLError.h */,
+				ED8709B11EA64CEF00CB9BC6 /* GraphQLError.m */,
+				ED8709B31EA64D1700CB9BC6 /* GraphQLOperation.h */,
+				ED8709B41EA64D1700CB9BC6 /* GraphQLOperation.m */,
+				ED8709B51EA64D1700CB9BC6 /* GraphQLQueryWatcher.h */,
+				ED8709B61EA64D1700CB9BC6 /* GraphQLQueryWatcher.m */,
+				ED8709B91EA64D3D00CB9BC6 /* GraphQLResponse.h */,
+				ED8709BA1EA64D3D00CB9BC6 /* GraphQLResponse.m */,
+				ED8709BC1EA64D4600CB9BC6 /* GraphQLResult.h */,
+				ED8709BD1EA64D4600CB9BC6 /* GraphQLResult.m */,
+				ED8709BF1EA64D5B00CB9BC6 /* GraphQLResultNormalizer.h */,
+				ED8709C01EA64D5B00CB9BC6 /* GraphQLResultNormalizer.m */,
+				ED8709A11EA6443E00CB9BC6 /* GraphQLResultReader.h */,
+				ED8709A21EA6443E00CB9BC6 /* GraphQLResultReader.m */,
+				ED8709A41EA6471D00CB9BC6 /* GraphQLTypes.h */,
+				ED8709A51EA6471D00CB9BC6 /* GraphQLTypes.m */,
+				ED8709C21EA64D8500CB9BC6 /* HTTPNetworkTransport.h */,
+				ED8709C31EA64D8500CB9BC6 /* HTTPNetworkTransport.m */,
+				ED8709CB1EA64DC300CB9BC6 /* NetworkTransport.h */,
+				ED8709CC1EA64DC300CB9BC6 /* NetworkTransport.m */,
+				ED8709A71EA6478F00CB9BC6 /* JSON.h */,
+				ED8709A81EA6478F00CB9BC6 /* JSON.m */,
+				ED8709C71EA64D9600CB9BC6 /* JSONSerializationFormat.h */,
+				ED8709C81EA64D9600CB9BC6 /* JSONSerializationFormat.m */,
+				ED6903601EA70EB50000A8C9 /* JSONStandardTypeConversions.h */,
+				ED6903611EA70EB50000A8C9 /* JSONStandardTypeConversions.m */,
+				ED87099E1EA6429D00CB9BC6 /* Record.h */,
+				ED87099F1EA6429D00CB9BC6 /* Record.m */,
+				ED87099A1EA6401E00CB9BC6 /* RecordSet.h */,
+				ED87099B1EA6401E00CB9BC6 /* RecordSet.m */,
+				ED8709C51EA64D9600CB9BC6 /* NSDictionary+JSONEncodable.h */,
+				ED8709C61EA64D9600CB9BC6 /* NSDictionary+JSONEncodable.m */,
+				ED8709D71EA66FBA00CB9BC6 /* Cancellable.h */,
+				ED8709D81EA66FBA00CB9BC6 /* Cancellable.m */,
+				ED8709991EA63FCF00CB9BC6 /* Utilities */,
+			);
+			path = Apollo;
+			sourceTree = "<group>";
+		};
+		ED8709991EA63FCF00CB9BC6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				ED6903661EA72A600000A8C9 /* Utilities.h */,
+				ED6903671EA72A600000A8C9 /* Utilities.m */,
+				ED8709D41EA66F9E00CB9BC6 /* NSSet+Disjoint.h */,
+				ED8709D51EA66F9E00CB9BC6 /* NSSet+Disjoint.m */,
+				ED8709901EA63FBC00CB9BC6 /* NSArray+Map.h */,
+				ED8709911EA63FBC00CB9BC6 /* NSArray+Map.m */,
+				ED8709921EA63FBC00CB9BC6 /* NSMutableArray+Concat.h */,
+				ED8709931EA63FBC00CB9BC6 /* NSMutableArray+Concat.m */,
+				ED8709941EA63FBC00CB9BC6 /* GQTuple.h */,
+				ED8709951EA63FBC00CB9BC6 /* GQTuple.m */,
+				ED8709CE1EA64DEF00CB9BC6 /* NSHTTPURLResponse+Utilities.h */,
+				ED8709CF1EA64DEF00CB9BC6 /* NSHTTPURLResponse+Utilities.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		F88877D0782A4CD6B54711FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				941B04D397EF3452436A3031 /* libPods-Apollo_OC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,9 +287,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED8709811EA610A200CB9BC6 /* Build configuration list for PBXNativeTarget "Apollo_OC" */;
 			buildPhases = (
+				9761A556E9B137CA4C99E471 /* [CP] Check Pods Manifest.lock */,
 				ED8709631EA610A200CB9BC6 /* Sources */,
 				ED8709641EA610A200CB9BC6 /* Frameworks */,
 				ED8709651EA610A200CB9BC6 /* Resources */,
+				B9A574A50007C16AEE3B21E4 /* [CP] Embed Pods Frameworks */,
+				715E32751110750C64AF325B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -151,14 +350,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		715E32751110750C64AF325B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Apollo_OC/Pods-Apollo_OC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9761A556E9B137CA4C99E471 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B9A574A50007C16AEE3B21E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Apollo_OC/Pods-Apollo_OC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED8709631EA610A200CB9BC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED6903651EA722AC0000A8C9 /* API.m in Sources */,
+				ED8709D31EA66B0A00CB9BC6 /* AsynchronousOperation.m in Sources */,
+				ED8709C41EA64D8500CB9BC6 /* HTTPNetworkTransport.m in Sources */,
+				ED8709871EA610EA00CB9BC6 /* GQClient.m in Sources */,
+				ED87099C1EA6401E00CB9BC6 /* RecordSet.m in Sources */,
+				ED8709BE1EA64D4600CB9BC6 /* GraphQLResult.m in Sources */,
+				ED8709961EA63FBC00CB9BC6 /* NSArray+Map.m in Sources */,
+				ED8709C91EA64D9600CB9BC6 /* NSDictionary+JSONEncodable.m in Sources */,
+				ED8709D01EA64DEF00CB9BC6 /* NSHTTPURLResponse+Utilities.m in Sources */,
+				ED8709B71EA64D1700CB9BC6 /* GraphQLOperation.m in Sources */,
 				ED8709751EA610A200CB9BC6 /* SecondViewController.m in Sources */,
+				ED8709D91EA66FBA00CB9BC6 /* Cancellable.m in Sources */,
 				ED87096F1EA610A200CB9BC6 /* AppDelegate.m in Sources */,
+				ED8709BB1EA64D3D00CB9BC6 /* GraphQLResponse.m in Sources */,
+				ED8709A61EA6471D00CB9BC6 /* GraphQLTypes.m in Sources */,
+				ED8709B81EA64D1700CB9BC6 /* GraphQLQueryWatcher.m in Sources */,
+				ED8709AF1EA64CA900CB9BC6 /* Fragments.m in Sources */,
+				ED8709AC1EA6481000CB9BC6 /* Field.m in Sources */,
+				ED87098B1EA611EE00CB9BC6 /* FetchQueryOperation.m in Sources */,
+				ED8709C11EA64D5B00CB9BC6 /* GraphQLResultNormalizer.m in Sources */,
+				ED8709A31EA6443E00CB9BC6 /* GraphQLResultReader.m in Sources */,
+				ED8709CA1EA64D9600CB9BC6 /* JSONSerializationFormat.m in Sources */,
+				ED8709971EA63FBC00CB9BC6 /* NSMutableArray+Concat.m in Sources */,
+				ED8709CD1EA64DC300CB9BC6 /* NetworkTransport.m in Sources */,
+				ED8709981EA63FBC00CB9BC6 /* GQTuple.m in Sources */,
+				ED8709D61EA66F9E00CB9BC6 /* NSSet+Disjoint.m in Sources */,
+				ED8709A91EA6478F00CB9BC6 /* JSON.m in Sources */,
 				ED8709721EA610A200CB9BC6 /* FirstViewController.m in Sources */,
+				ED8709B21EA64CF000CB9BC6 /* GraphQLError.m in Sources */,
+				ED87098E1EA6122F00CB9BC6 /* ApolloStore.m in Sources */,
+				ED8709A01EA6429D00CB9BC6 /* Record.m in Sources */,
+				ED6903621EA70EB50000A8C9 /* JSONStandardTypeConversions.m in Sources */,
+				ED6903681EA72A600000A8C9 /* Utilities.m in Sources */,
 				ED87096C1EA610A200CB9BC6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,9 +554,11 @@
 		};
 		ED8709821EA610A200CB9BC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98F61DE28BF357E0C8CA78D1 /* Pods-Apollo_OC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZWR8MWYL3V;
+				GCC_PREFIX_HEADER = Apollo_OC/Apollo_OC.pch;
 				INFOPLIST_FILE = Apollo_OC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Midtown-Doornail.Apollo-OC";
@@ -289,9 +568,11 @@
 		};
 		ED8709831EA610A200CB9BC6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 421EFCEF52199683BB61B243 /* Pods-Apollo_OC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZWR8MWYL3V;
+				GCC_PREFIX_HEADER = Apollo_OC/Apollo_OC.pch;
 				INFOPLIST_FILE = Apollo_OC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Midtown-Doornail.Apollo-OC";
@@ -318,6 +599,7 @@
 				ED8709831EA610A200CB9BC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

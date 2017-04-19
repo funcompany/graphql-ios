@@ -1,0 +1,22 @@
+//
+//  Apollo_OC.pch
+//  Apollo_OC
+//
+//  Created by Travel Chu on 4/18/17.
+//  Copyright © 2017 Midtown Doornail. All rights reserved.
+//
+
+#ifndef Apollo_OC_pch
+#define Apollo_OC_pch
+
+#define JSONObject NSString *, JSONValue
+#define GraphQLMap NSString *, id<JSONEncodable>
+#define CacheKey NSString
+#define JSONValue id
+#define GraphQLID NSString
+
+#import "GQTuple.h"
+#import "NSArray+Map.h"
+#import "YYModel.h"
+
+#endif /* Apollo_OC_pch */
