@@ -5,3 +5,4 @@ Pods/
 Podfile.lock
 .DS_Store
 Apollo_OC.xcodeproj/project.xcworkspace/xcuserdata/
+/upload.sh
