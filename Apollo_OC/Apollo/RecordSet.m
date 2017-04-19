@@ -35,11 +35,11 @@
   }
 }
 
-- (Record *)recordForKey:(CacheKey *)key {
+- (Record *)recordForKey:(NSString *)key {
   return self.storage[key];
 }
 
-- (NSSet <CacheKey *> *)mergeRecords:(RecordSet *)records {
+- (NSSet <NSString *> *)mergeRecords:(RecordSet *)records {
   NSMutableSet *changedKeys = [NSMutableSet set];
   for (Record *record in records.storage.allValues) {
     [changedKeys unionSet:[self mergeRecord:record]];
@@ -47,14 +47,14 @@
   return changedKeys;
 }
 
-- (NSSet <CacheKey *> *)mergeRecord:(Record *)record {
+- (NSSet <NSString *> *)mergeRecord:(Record *)record {
   Record *oldRecord = self.storage[record.key];
   if (oldRecord) {
     [self.storage removeObjectForKey:record.key];
     NSMutableSet *changedKeys = [NSMutableSet set];
     for (NSString *key in record.fields.allKeys) {
-      JSONValue oldValue = oldRecord.fields[key];
-      JSONValue value = record.fields[key];
+      id oldValue = oldRecord.fields[key];
+      id value = record.fields[key];
       if ([oldValue isEqual:value]) {
         continue;
       }

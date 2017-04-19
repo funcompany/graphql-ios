@@ -14,9 +14,9 @@
 
 @property (nonatomic, strong) id<GraphQLMappable> data;
 @property (nonatomic, strong) NSArray <GraphQLError *> *errors;
-@property (nonatomic, strong) NSSet <CacheKey *> *dependentKeys;
+@property (nonatomic, strong) NSSet <NSString *> *dependentKeys;
 
-- (instancetype)initWithData:(id<GraphQLMappable>)data errors:(NSArray <GraphQLError *> *)errors dependentKeys:(NSSet <CacheKey *> *)dependentKeys;
+- (instancetype)initWithData:(id<GraphQLMappable>)data errors:(NSArray <GraphQLError *> *)errors dependentKeys:(NSSet <NSString *> *)dependentKeys;
 
 @end
 

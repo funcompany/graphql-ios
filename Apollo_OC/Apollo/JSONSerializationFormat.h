@@ -11,5 +11,5 @@
 
 @interface JSONSerializationFormat : NSObject
 - (NSData *)serialize:(id<JSONEncodable>)value;
-- (JSONValue)deserialize:(NSData *)data;
+- (id)deserialize:(NSData *)data;
 @end

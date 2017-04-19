@@ -13,16 +13,16 @@
 @property (nonatomic, strong) NSMutableArray <NSString *> *path;
 @end
 
-typedef JSONValue (^GraphQLResolver)(Field *field, NSDictionary <JSONObject> *object, GraphQLResolveInfo *info);
+typedef id (^GraphQLResolver)(Field *field, NSDictionary <NSString *, id> *object, GraphQLResolveInfo *info);
 
 @protocol GraphQLResultReaderDelegate <NSObject>
 
 - (void)willResolve:(Field *)field info:(GraphQLResolveInfo *)info;
 - (void)didResolve:(Field *)field info:(GraphQLResolveInfo *)info;
-- (void)didParse:(JSONValue)value;
+- (void)didParse:(id)value;
 - (void)didParseNull;
-- (void)willParse:(NSDictionary <JSONObject> *)object;
-- (void)didParseJSONObject:(NSDictionary <JSONObject> *)object;
+- (void)willParse:(NSDictionary <NSString *, id> *)object;
+- (void)didParseJSONObject:(NSDictionary <NSString *, id> *)object;
 - (void)willParseElements:(NSArray *)array;
 - (void)willParseElementAtIndex:(NSInteger)index;
 - (void)didParseElementAtIndex:(NSInteger)index;
@@ -31,17 +31,17 @@ typedef JSONValue (^GraphQLResolver)(Field *field, NSDictionary <JSONObject> *ob
 @end
 
 @interface GraphQLResultReader : NSObject
-@property (nonatomic, strong) NSDictionary <JSONObject> *dataEntry;
-@property (nonatomic, strong) NSDictionary <GraphQLMap> *variables;
+@property (nonatomic, strong) NSDictionary <NSString *, id> *dataEntry;
+@property (nonatomic, strong) NSDictionary <NSString *, id<JSONEncodable>> *variables;
 @property (nonatomic, strong) GraphQLResolver resolver;
 @property (nonatomic, weak) id<GraphQLResultReaderDelegate> delegate;
-@property (nonatomic, strong) NSMutableArray <NSDictionary <JSONObject> *> *objectStack;
+@property (nonatomic, strong) NSMutableArray <NSDictionary <NSString *, id> *> *objectStack;
 
 @property (nonatomic, strong) GraphQLResolveInfo *resolveInfo;
 
-- (NSDictionary <JSONObject> *)currentObject;
-- (instancetype)initWithVariables:(NSDictionary <GraphQLMap> *)variables resolver:(GraphQLResolver)resolver;
-- (instancetype)initWithRootObject:(NSDictionary <JSONObject> *)rootObject;
+- (NSDictionary <NSString *, id> *)currentObject;
+- (instancetype)initWithVariables:(NSDictionary <NSString *, id<JSONEncodable>> *)variables resolver:(GraphQLResolver)resolver;
+- (instancetype)initWithRootObject:(NSDictionary <NSString *, id> *)rootObject;
 - (id)valueForField:(Field *)field;
 - (id)listForField:(Field *)field;
 

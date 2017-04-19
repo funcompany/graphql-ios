@@ -11,7 +11,7 @@
 
 @interface NSDictionary (JSONEncodable) <JSONEncodable>
 
-- (JSONValue)jsonValue;
-- (NSDictionary <JSONObject> *)jsonObject;
+- (id)jsonValue;
+- (NSDictionary <NSString *, id> *)jsonObject;
 
 @end

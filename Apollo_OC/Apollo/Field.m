@@ -11,13 +11,13 @@
 
 @implementation Field
 
-- (instancetype)initWithResponseName:(NSString *)responseName fieldName:(NSString *)fieldName arguments:(NSDictionary <GraphQLMap>*)arguments {
+- (instancetype)initWithResponseName:(NSString *)responseName fieldName:(NSString *)fieldName arguments:(NSDictionary <NSString *, id<JSONEncodable>>*)arguments {
   self = [super init];
   if (self) {
     self.responseName = responseName;
     self.fieldName = fieldName ?: responseName;
     self.arguments = arguments;
-    NSDictionary <JSONObject>*aArguments = self.arguments ? self.arguments.jsonObject : nil;
+    NSDictionary <NSString *, id>*aArguments = self.arguments ? self.arguments.jsonObject : nil;
     if (aArguments && aArguments.allKeys.count > 0) {
       NSString *argumentsKey = [self orderIndependentKeyForObject:aArguments];
       self.cacheKey = [NSString stringWithFormat:@"%@(%@)", self.fieldName, argumentsKey];
@@ -28,7 +28,7 @@
   return self;
 }
 
-- (NSString *)orderIndependentKeyForObject:(NSDictionary <JSONObject>*)object {
+- (NSString *)orderIndependentKeyForObject:(NSDictionary <NSString *, id>*)object {
   NSArray *sortedKeys = [object keysSortedByValueUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
     return [obj1 compare:obj2];
   }];

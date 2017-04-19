@@ -22,11 +22,11 @@
 
 @implementation GraphQLResultReader
 
-- (NSDictionary <JSONObject> *)currentObject {
+- (NSDictionary <NSString *, id> *)currentObject {
   return self.objectStack.lastObject;
 }
 
-- (instancetype)initWithVariables:(NSDictionary <GraphQLMap> *)variables resolver:(GraphQLResolver)resolver {
+- (instancetype)initWithVariables:(NSDictionary <NSString *, id<JSONEncodable>> *)variables resolver:(GraphQLResolver)resolver {
   self = [super init];
   if (self) {
     self.variables = variables ?: [NSMutableDictionary dictionary];
@@ -37,7 +37,7 @@
   return self;
 }
 
-- (instancetype)initWithRootObject:(NSDictionary <JSONObject> *)rootObject {
+- (instancetype)initWithRootObject:(NSDictionary <NSString *, id> *)rootObject {
   self = [self initWithVariables:nil resolver:^id(Field *field, NSDictionary<NSString *,id> *object, GraphQLResolveInfo *info) {
     NSDictionary *goodObj = object ?: rootObject;
     if (goodObj) {

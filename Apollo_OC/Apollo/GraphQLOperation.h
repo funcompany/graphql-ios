@@ -14,7 +14,7 @@
 @interface GraphQLOperation : NSObject <GraphQLMappable>
 @property (nonatomic, strong) NSString *operationDefinition;
 @property (nonatomic, strong) NSString *queryDocument;
-@property (nonatomic, strong) NSMutableDictionary <GraphQLMap> *variables;
+@property (nonatomic, strong) NSMutableDictionary <NSString *, id<JSONEncodable>> *variables;
 
 - (NSString *)queryDocument;
 - (instancetype)initWithReader:(GraphQLResultReader *)reader;

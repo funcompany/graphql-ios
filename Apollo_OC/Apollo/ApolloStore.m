@@ -31,7 +31,7 @@
   return self;
 }
 
-+ (CacheKey *)rootKeyForOperation:(GraphQLOperation *)operation {
++ (NSString *)rootKeyForOperation:(GraphQLOperation *)operation {
   if ([operation isKindOfClass:[GraphQLQuery class]]) {
     return @"QUERY_ROOT";
   } else if ([operation isKindOfClass:[GraphQLQuery class]]) {
@@ -43,7 +43,7 @@
 
 - (void)publish:(RecordSet *)records context:(NSInteger)context {
   dispatch_barrier_async(self.queue, ^{
-    NSSet <CacheKey *> *changedKeys = [self.records mergeRecords:records];
+    NSSet <NSString *> *changedKeys = [self.records mergeRecords:records];
     for (ApolloStoreSubscriber *subscriber in self.subscribers) {
       [subscriber store:self didChangeKeys:changedKeys context:context];
     }
@@ -65,12 +65,12 @@
 - (void)loadQuery:(GraphQLQuery *)query cacheKeyForObject:(CacheKeyForObject)cacheKeyForObject resultHandler:(OperationResultHandler)resultHandler {
   dispatch_async(self.queue, ^{
     @try {
-      CacheKey *rootKey = [ApolloStore rootKeyForOperation:query];
+      NSString *rootKey = [ApolloStore rootKeyForOperation:query];
       Record *rootRecord = [self.records recordForKey:rootKey];
-      NSDictionary <JSONObject> *rootObject = rootRecord ? rootRecord.fields : nil;
+      NSDictionary <NSString *, id> *rootObject = rootRecord ? rootRecord.fields : nil;
       GraphQLResultReader *reader = [[GraphQLResultReader alloc] initWithVariables:query.variables resolver:^id(Field *field, NSDictionary<NSString *,id> *object, GraphQLResolveInfo *info) {
-        JSONValue goodObject = object ?: rootObject;
-        NSDictionary <JSONObject> *value = goodObject[field.cacheKey];
+        id goodObject = object ?: rootObject;
+        NSDictionary <NSString *, id> *value = goodObject[field.cacheKey];
         return [self complete:value];
       }];
       GraphQLResultNormalizer *normalizer = [[GraphQLResultNormalizer alloc] initWithRootKey:rootKey];
@@ -81,7 +81,7 @@
       Class ResponseDataClass = [query responseDataClass];
       
       id data = [[ResponseDataClass alloc] initWithReader:reader];
-      NSSet <CacheKey *> *dependentKeys = normalizer.dependentKeys;
+      NSSet <NSString *> *dependentKeys = normalizer.dependentKeys;
       GraphQLResult *result = [[GraphQLResult alloc] initWithData:data errors:nil dependentKeys:dependentKeys];
       resultHandler(result, nil);
     } @catch (NSException *exception) {
@@ -90,7 +90,7 @@
   });
 }
 
-- (JSONValue)complete:(JSONValue)value {
+- (id)complete:(id)value {
   if ([value isKindOfClass:[Reference class]]) {
     Reference *reference = value;
     Record *record = [self.records recordForKey:reference.key];
@@ -111,7 +111,7 @@
 
 @implementation ApolloStoreSubscriber
 
-- (void)store:(ApolloStore *)store didChangeKeys:(NSSet <CacheKey *>*)changedKeys context:(NSInteger)context {
+- (void)store:(ApolloStore *)store didChangeKeys:(NSSet <NSString *>*)changedKeys context:(NSInteger)context {
   NSAssert(NO, @"Should not get here");
 }
 

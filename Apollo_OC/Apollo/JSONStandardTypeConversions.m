@@ -12,7 +12,7 @@
 @dynamic jsonValue;
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wobjc-designated-initializers"
-- (instancetype)init:(JSONValue)value {
+- (instancetype)init:(id)value {
   if (![value isKindOfClass:[NSString class]]) {
     NSString *info = [NSString stringWithFormat:@"JSONDecodingError.couldNotConvert(value: %@, to: %@)", value, NSStringFromClass([NSString class])];
     @throw [NSException exceptionWithName:info reason:info userInfo:nil];
@@ -21,7 +21,7 @@
   return self;
 }
 
-- (JSONValue)jsonValue {
+- (id)jsonValue {
   return self;
 }
 #pragma clang diagnostic pop

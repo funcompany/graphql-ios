@@ -27,7 +27,7 @@
 // asynchronous and we don't want to block the dispatch threads
 //@property (nonatomic, strong) ReadWriteLock *cacheLock;
 
-+ (CacheKey *)rootKeyForOperation:(GraphQLOperation *)operation;
++ (NSString *)rootKeyForOperation:(GraphQLOperation *)operation;
 
 - (void)publish:(RecordSet *)records context:(NSInteger)context;
 
@@ -40,5 +40,5 @@
 @end
 
 @interface ApolloStoreSubscriber : NSObject
-- (void)store:(ApolloStore *)store didChangeKeys:(NSSet <CacheKey *>*)changedKeys context:(NSInteger)context;
+- (void)store:(ApolloStore *)store didChangeKeys:(NSSet <NSString *>*)changedKeys context:(NSInteger)context;
 @end

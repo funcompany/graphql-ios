@@ -14,7 +14,7 @@
 
 @implementation GraphQLResponse
 
-- (instancetype)initWithOperation:(GraphQLOperation *)operation body:(NSDictionary <JSONObject> *)body {
+- (instancetype)initWithOperation:(GraphQLOperation *)operation body:(NSDictionary <NSString *, id> *)body {
   self = [super init];
   if (self) {
     self.operation = operation;
@@ -25,10 +25,10 @@
 
 - (GQTuple *)parseResult:(CacheKeyForObject)cacheKeyForObject {
   GraphQLOperation *data = nil;
-  NSSet <CacheKey *> *dependentKeys = nil;
+  NSSet <NSString *> *dependentKeys = nil;
   RecordSet *records = nil;
   
-  NSDictionary <JSONObject> *dataEntry = (NSDictionary *)self.body[@"data"];
+  NSDictionary <NSString *, id> *dataEntry = (NSDictionary *)self.body[@"data"];
   if (dataEntry) {
     GraphQLResultReader *reader = [[GraphQLResultReader alloc] initWithVariables:self.operation.variables resolver:^id(Field *field, NSDictionary<NSString *,id> *object, GraphQLResolveInfo *info) {
       return (object ?: dataEntry)[field.responseName];
@@ -47,7 +47,7 @@
   }
   
   NSArray *errors = nil;
-  NSArray <NSDictionary <JSONObject>*> *errorsEntry = self.body[@"errors"];
+  NSArray <NSDictionary <NSString *, id>*> *errorsEntry = self.body[@"errors"];
   if (errorsEntry) {
     errors = [errorsEntry map:^id(id obj, NSUInteger idx) {
       return [[GraphQLError alloc] initWithObject:obj];

@@ -10,7 +10,7 @@
 
 @implementation GraphQLResult
 
-- (instancetype)initWithData:(id<GraphQLMappable>)data errors:(NSArray <GraphQLError *> *)errors dependentKeys:(NSSet <CacheKey *> *)dependentKeys {
+- (instancetype)initWithData:(id<GraphQLMappable>)data errors:(NSArray <GraphQLError *> *)errors dependentKeys:(NSSet <NSString *> *)dependentKeys {
   self = [super init];
   if (self) {
     self.data = data;

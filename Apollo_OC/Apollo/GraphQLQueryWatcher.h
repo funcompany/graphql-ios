@@ -17,7 +17,7 @@
 
 @property (nonatomic) NSInteger context;
 @property (nonatomic, weak) id<Cancellable>fetching;
-@property (nonatomic, strong) NSMutableSet <CacheKey *> *dependentKeys;
+@property (nonatomic, strong) NSMutableSet <NSString *> *dependentKeys;
 
 - (instancetype)initWithClient:(GQClient *)client query:(GraphQLQuery *)query handlerQueue:(dispatch_queue_t)handlerQueue resultHandler:(OperationResultHandler)resultHandler;
 - (void)refetch;

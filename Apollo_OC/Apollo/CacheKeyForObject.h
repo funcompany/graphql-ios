@@ -9,6 +9,6 @@
 #ifndef CacheKeyForObject_h
 #define CacheKeyForObject_h
 
-typedef JSONValue(^CacheKeyForObject)(NSDictionary <JSONObject> *object);
+typedef id(^CacheKeyForObject)(NSDictionary <NSString *, id> *object);
 
 #endif /* CacheKeyForObject_h */

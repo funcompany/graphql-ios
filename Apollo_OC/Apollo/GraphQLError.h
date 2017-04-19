@@ -11,13 +11,13 @@
 @interface Location : NSObject
 @property (nonatomic) NSInteger line;
 @property (nonatomic) NSInteger column;
-- (instancetype)initWithObject:(NSDictionary <JSONObject>*)object;
+- (instancetype)initWithObject:(NSDictionary <NSString *, id>*)object;
 @end
 
 
 @interface GraphQLError : NSError
 
-- (instancetype)initWithObject:(NSDictionary <JSONObject> *)object;
+- (instancetype)initWithObject:(NSDictionary <NSString *, id> *)object;
 - (instancetype)initWithMessage:(NSString *)message;
 - (id)infoForKey:(NSString *)key;
 - (NSString *)message;

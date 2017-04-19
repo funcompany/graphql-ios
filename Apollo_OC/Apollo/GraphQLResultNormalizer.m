@@ -14,7 +14,7 @@
 @property (nonatomic, strong) Record *currentRecord;
 @property (nonatomic, strong) NSMutableArray <NSArray <NSString *> *> *pathStack;
 @property (nonatomic, strong) NSMutableArray <NSString *> *path;
-@property (nonatomic, strong) NSMutableArray <JSONValue> *valueStack;
+@property (nonatomic, strong) NSMutableArray <id> *valueStack;
 @end
 
 @implementation GraphQLResultNormalizer
@@ -30,7 +30,7 @@
   return self;
 }
 
-- (instancetype)initWithRootKey:(CacheKey *)rootKey {
+- (instancetype)initWithRootKey:(NSString *)rootKey {
   self = [self init];
   self.records = [[RecordSet alloc] init:nil];
   self.recordStack = [NSMutableArray array];
@@ -58,7 +58,7 @@
   }
 }
 
-- (void)didParse:(JSONValue)value {
+- (void)didParse:(id)value {
   [self.valueStack addObject:value];
 }
 
@@ -66,12 +66,12 @@
   [self.valueStack addObject:[NSNull null]];
 }
 
-- (void)willParse:(NSDictionary <JSONObject> *)object {
+- (void)willParse:(NSDictionary <NSString *, id> *)object {
   [self.pathStack addObject:self.path];
   
-  CacheKey *cacheKey;
+  NSString *cacheKey;
   if (self.cacheKeyForObject && self.cacheKeyForObject(object)) {
-    JSONValue value = self.cacheKeyForObject(object);
+    id value = self.cacheKeyForObject(object);
 //    cacheKey = String(describing: value)
     cacheKey = [value description];
     self.path = [NSMutableArray arrayWithObject:cacheKey];
@@ -82,7 +82,7 @@
   self.currentRecord = [[Record alloc] initWithKey:cacheKey fields:nil];
 }
 
-- (void)didParseJSONObject:(NSDictionary <JSONObject> *)object {
+- (void)didParseJSONObject:(NSDictionary <NSString *, id> *)object {
   self.path = self.pathStack.lastObject.mutableCopy;
   [self.pathStack removeObject:self.path];
   

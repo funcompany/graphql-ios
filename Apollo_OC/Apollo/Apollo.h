@@ -9,12 +9,6 @@
 #ifndef Apollo_h
 #define Apollo_h
 
-#define JSONObject NSString *, JSONValue
-#define GraphQLMap NSString *, id<JSONEncodable>
-#define CacheKey NSString
-#define JSONValue id
-#define GraphQLID NSString
-
 #import "GQTuple.h"
 #import "NSArray+Map.h"
 #import "GQClient.h"

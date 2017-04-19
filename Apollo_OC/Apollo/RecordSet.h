@@ -10,12 +10,12 @@
 #import "Record.h"
 
 @interface RecordSet : NSObject
-@property (nonatomic, strong) NSMutableDictionary <CacheKey *, Record *> *storage;
+@property (nonatomic, strong) NSMutableDictionary <NSString *, Record *> *storage;
 - (instancetype)init:(NSArray <Record *> *)records;
 - (BOOL)isEmpty;
 - (void)insert:(Record *)record;
 - (void)insertContentsOf:(NSArray <Record *> *)records;
-- (Record *)recordForKey:(CacheKey *)key;
-- (NSSet <CacheKey *> *)mergeRecords:(RecordSet *)records;
-- (NSSet <CacheKey *> *)mergeRecord:(Record *)record;
+- (Record *)recordForKey:(NSString *)key;
+- (NSSet <NSString *> *)mergeRecords:(RecordSet *)records;
+- (NSSet <NSString *> *)mergeRecord:(Record *)record;
 @end

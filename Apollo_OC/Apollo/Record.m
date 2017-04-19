@@ -10,7 +10,7 @@
 
 @implementation Record
 
-- (instancetype)initWithKey:(CacheKey *)key fields:(NSMutableDictionary <JSONObject> *)fields {
+- (instancetype)initWithKey:(NSString *)key fields:(NSMutableDictionary <NSString *, id> *)fields {
   self = [super init];
   if (self) {
     self.key = key;
@@ -19,11 +19,11 @@
   return self;
 }
 
-- (JSONValue)valueForKey:(CacheKey *)key {
+- (id)valueForKey:(NSString *)key {
   return self.fields[key];
 }
 
-- (void)setRecordValue:(JSONValue)value forKey:(CacheKey *)key{
+- (void)setRecordValue:(id)value forKey:(NSString *)key{
   self.fields[key] = value;
 }
 
@@ -35,7 +35,7 @@
 
 @implementation Reference
 
-- (instancetype _Nonnull)initWithKey:(CacheKey * _Nonnull)key {
+- (instancetype _Nonnull)initWithKey:(NSString * _Nonnull)key {
   self = [super init];
   if (self) {
     self.key = key;

@@ -11,11 +11,11 @@
 @implementation NSDictionary (JSONEncodable)
 @dynamic jsonValue;
 
-- (JSONValue)jsonValue {
+- (id)jsonValue {
   return self.jsonObject;
 }
 
-- (NSDictionary <JSONObject> *)jsonObject {
+- (NSDictionary <NSString *, id> *)jsonObject {
   NSMutableDictionary *jsonObject = [NSMutableDictionary dictionary];
   for (NSString *key in self.allKeys) {
     id value = self[key];

@@ -12,9 +12,9 @@
 @interface Field : NSObject
 @property (nonatomic, strong) NSString *responseName;
 @property (nonatomic, strong) NSString *fieldName;
-@property (nonatomic, strong) NSDictionary <GraphQLMap> *arguments;
+@property (nonatomic, strong) NSDictionary <NSString *, id<JSONEncodable>> *arguments;
 @property (nonatomic, strong) NSString *cacheKey;
 
-- (instancetype)initWithResponseName:(NSString *)responseName fieldName:(NSString *)fieldName arguments:(NSDictionary <GraphQLMap>*)arguments;
-- (NSString *)orderIndependentKeyForObject:(NSDictionary <JSONObject>*)object;
+- (instancetype)initWithResponseName:(NSString *)responseName fieldName:(NSString *)fieldName arguments:(NSDictionary <NSString *, id<JSONEncodable>>*)arguments;
+- (NSString *)orderIndependentKeyForObject:(NSDictionary <NSString *, id>*)object;
 @end

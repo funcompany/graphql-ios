@@ -48,7 +48,7 @@
   }
 }
 
-- (void)store:(ApolloStore *)store didChangeKeys:(NSSet <CacheKey *>*)changedKeys context:(NSInteger)context {
+- (void)store:(ApolloStore *)store didChangeKeys:(NSSet <NSString *>*)changedKeys context:(NSInteger)context {
   if (context == self.context) {
     return;
   }

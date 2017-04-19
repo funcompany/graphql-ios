@@ -14,7 +14,7 @@
   return [NSJSONSerialization dataWithJSONObject:value options:0 error:nil];
 }
 
-- (JSONValue)deserialize:(NSData *)data {
+- (id)deserialize:(NSData *)data {
   return [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
 }
 

@@ -13,7 +13,7 @@ static NSString *const LocationsKey = @"locations";
 
 @implementation Location
 
-- (instancetype)initWithObject:(NSDictionary <JSONObject>*)object {
+- (instancetype)initWithObject:(NSDictionary <NSString *, id>*)object {
   self = [super init];
   if (self) {
     self.line = [(id)object[@"line"] integerValue];
@@ -26,12 +26,12 @@ static NSString *const LocationsKey = @"locations";
 
 
 @interface GraphQLError ()
-@property (nonatomic, strong) NSDictionary <JSONObject> *object;
+@property (nonatomic, strong) NSDictionary <NSString *, id> *object;
 @end
 
 @implementation GraphQLError
 
-- (instancetype)initWithObject:(NSDictionary <JSONObject> *)object {
+- (instancetype)initWithObject:(NSDictionary <NSString *, id> *)object {
   self = [super init];
   if (self) {
     self.object = object;
@@ -53,7 +53,7 @@ static NSString *const LocationsKey = @"locations";
 
 - (NSArray <Location *> *)locations {
   NSMutableArray *tmpArray = [NSMutableArray array];
-  for (NSDictionary <JSONObject>*obj in (NSDictionary *)self.object[LocationsKey]) {
+  for (NSDictionary <NSString *, id>*obj in (NSDictionary *)self.object[LocationsKey]) {
     [tmpArray addObject:[[Location alloc] initWithObject:obj]];
   }
   return tmpArray;

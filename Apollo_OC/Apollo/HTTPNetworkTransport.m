@@ -29,7 +29,7 @@
   NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:self.url];
   request.HTTPMethod = @"POST";
   [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-  NSDictionary <GraphQLMap>*body = @{@"query" : operation.queryDocument,
+  NSDictionary <NSString *, id<JSONEncodable>>*body = @{@"query" : operation.queryDocument,
                                      @"variables" : operation.variables
                                      };
   request.HTTPBody = [self.serializationFormat serialize:(id<JSONEncodable>)body];
@@ -50,7 +50,7 @@
       completionHandler (nil, error);
       return;
     }
-    NSDictionary <JSONObject>*responseObject = [self.serializationFormat deserialize:data];
+    NSDictionary <NSString *, id>*responseObject = [self.serializationFormat deserialize:data];
     if (![responseObject isKindOfClass:[NSDictionary class]]) {
       NSAssert(NO, @"invalidResponse");
       return;

@@ -12,7 +12,7 @@
 @implementation GraphQLMapConvertible
 @dynamic jsonValue;
 
-- (JSONValue)jsonValue {
+- (id)jsonValue {
   return self.graphQLMap.jsonValue;
 }
 

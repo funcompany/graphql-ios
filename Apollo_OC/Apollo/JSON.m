@@ -11,7 +11,7 @@
 
 @implementation JSON
 
-- (JSONValue)optional:(JSONValue)optionalValue {
+- (id)optional:(id)optionalValue {
   if (!optionalValue) {
     @throw [NSException exceptionWithName:@"JSONDecodingError.missingValue" reason:@"JSONDecodingError.missingValue" userInfo:nil];
   }
@@ -23,7 +23,7 @@
   return optionalValue;
 }
 
-- (JSONValue)required:(JSONValue)optionalValue {
+- (id)required:(id)optionalValue {
   if (!optionalValue) {
     @throw [NSException exceptionWithName:@"JSONDecodingError.missingValue" reason:@"JSONDecodingError.missingValue" userInfo:nil];
   }
@@ -35,7 +35,7 @@
   return optionalValue;
 }
 
-- (JSONValue)cast:(JSONValue)value toKind:(Class)clazz {
+- (id)cast:(id)value toKind:(Class)clazz {
   if (![value isKindOfClass:clazz]) {
     NSString *info = [NSString stringWithFormat:@"JSONDecodingError.couldNotConvert(value: %@, to: %@)", value, NSStringFromClass(clazz)];
     @throw [NSException exceptionWithName:info reason:info userInfo:nil];

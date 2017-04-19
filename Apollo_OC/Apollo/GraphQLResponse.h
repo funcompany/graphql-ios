@@ -12,8 +12,8 @@
 
 @interface GraphQLResponse : GraphQLOperation
 @property (nonatomic, strong) GraphQLOperation *operation;
-@property (nonatomic, strong) NSDictionary <JSONObject> *body;
+@property (nonatomic, strong) NSDictionary <NSString *, id> *body;
 
-- (instancetype)initWithOperation:(GraphQLOperation *)operation body:(NSDictionary <JSONObject> *)body;
+- (instancetype)initWithOperation:(GraphQLOperation *)operation body:(NSDictionary <NSString *, id> *)body;
 - (GQTuple *)parseResult:(CacheKeyForObject)cacheKeyForObject;
 @end

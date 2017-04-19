@@ -10,6 +10,6 @@
 #import "JSON.h"
 
 @interface NSString (JSON)<JSONEncodable, JSONDecodable>
-@property (nonatomic, strong) JSONValue jsonValue;
-- (instancetype)init:(JSONValue)value;
+@property (nonatomic, strong) id jsonValue;
+- (instancetype)init:(id)value;
 @end

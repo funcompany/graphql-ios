@@ -17,14 +17,14 @@
 
 @protocol GraphQLMapConvertible <JSONEncodable>
 
-@property (nonatomic, strong) NSMutableDictionary <GraphQLMap> *graphQLMap;
+@property (nonatomic, strong) NSMutableDictionary <NSString *, id<JSONEncodable>> *graphQLMap;
 
 @end
 
 @interface GraphQLMapConvertible : NSObject <GraphQLMapConvertible>
 
-@property (nonatomic, strong) NSMutableDictionary <GraphQLMap> *graphQLMap;
+@property (nonatomic, strong) NSMutableDictionary <NSString *, id<JSONEncodable>> *graphQLMap;
 
-- (JSONValue)jsonValue;
+- (id)jsonValue;
 
 @end

@@ -14,17 +14,17 @@
 @class GraphQLResolveInfo;
 @interface GraphQLResultNormalizer : NSObject <GraphQLResultReaderDelegate>
 @property (nonatomic, strong) RecordSet *records;
-@property (nonatomic, strong) NSMutableSet <CacheKey *> *dependentKeys;
+@property (nonatomic, strong) NSMutableSet <NSString *> *dependentKeys;
 @property (nonatomic, strong) CacheKeyForObject cacheKeyForObject;
 
-- (instancetype)initWithRootKey:(CacheKey *)rootKey;
+- (instancetype)initWithRootKey:(NSString *)rootKey;
 
 //- (void)willResolve:(Field *)field info:(GraphQLResolveInfo *)info;
 //- (void)didResolve:(Field *)field info:(GraphQLResolveInfo *)info;
-//- (void)didParse:(JSONValue)value;
+//- (void)didParse:(id)value;
 //- (void)didParseNull;
-//- (void)willParse:(NSDictionary <JSONObject> *)object;
-//- (void)didParseJSONObject:(NSDictionary <JSONObject> *)object;
+//- (void)willParse:(NSDictionary <NSString *, id> *)object;
+//- (void)didParseJSONObject:(NSDictionary <NSString *, id> *)object;
 //- (void)willParseElements:(NSArray *)array;
 //- (void)willParseElementAtIndex:(NSInteger)index;
 //- (void)didParseElementAtIndex:(NSInteger)index;

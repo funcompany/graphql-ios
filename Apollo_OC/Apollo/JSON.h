@@ -19,13 +19,13 @@ typedef NS_ENUM(NSUInteger, JSONDecodingError) {
 
 @protocol JSONDecodable <NSObject>
 
-- (instancetype)init:(JSONValue)value;
+- (instancetype)init:(id)value;
 
 @end
 
 @interface JSONDecodable : NSObject
 
-- (instancetype)init:(JSONValue)value;
+- (instancetype)init:(id)value;
 
 @end
 
@@ -33,13 +33,13 @@ typedef NS_ENUM(NSUInteger, JSONDecodingError) {
 
 @protocol JSONEncodable <NSObject>
 
-@property (nonatomic, strong) JSONValue jsonValue;
+@property (nonatomic, strong) id jsonValue;
 
 @end
 
 @interface JSONEncodable : NSObject <JSONEncodable>
 
-@property (nonatomic, strong) JSONValue jsonValue;
+@property (nonatomic, strong) id jsonValue;
 
 @end
 
@@ -47,9 +47,9 @@ typedef NS_ENUM(NSUInteger, JSONDecodingError) {
 
 @interface JSON : NSObject
 
-- (JSONValue)optional:(JSONValue)optionalValue;
-- (JSONValue)required:(JSONValue)optionalValue;
-- (JSONValue)cast:(JSONValue)value toKind:(Class)clazz;
+- (id)optional:(id)optionalValue;
+- (id)required:(id)optionalValue;
+- (id)cast:(id)value toKind:(Class)clazz;
 - (BOOL)equals:(id)lhs rhs:(id)rhs;
 
 @end
