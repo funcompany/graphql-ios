@@ -36,6 +36,8 @@ typedef NS_ENUM(NSUInteger, CachePolicy) {
 
 - (id<Cancellable>)fetch:(GraphQLQuery *)query resultHandler:(OperationResultHandler)resultHandler;
 - (GraphQLQueryWatcher *)watch:(GraphQLQuery *)query resultHandler:(OperationResultHandler)resultHandler;
+- (id<Cancellable>)perform:(GraphQLMutation *)mutation queue:(dispatch_queue_t)queue resultHandler:(OperationResultHandler)resultHandler;
+
 - (id<Cancellable>)_fetch:(GraphQLQuery *)query cachePolicy:(CachePolicy)cachePolicy context:(NSInteger)context queue:(dispatch_queue_t)queue resultHandler:(OperationResultHandler)resultHandler;
 - (id<Cancellable>)send:(GraphQLOperation *)Operation context:(NSInteger)context handlerQueue:(dispatch_queue_t)handlerQueue resultHandler:(OperationResultHandler)resultHandler;
 
