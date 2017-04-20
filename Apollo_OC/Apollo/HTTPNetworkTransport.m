@@ -42,7 +42,7 @@
       NSAssert(NO, @"Response should be an HTTPURLResponse");
       return;
     }
-    if (![(NSHTTPURLResponse *)response isSuccessful]) {
+    if (![(NSHTTPURLResponse *)response isSuccessful] && !data) {
       completionHandler (nil, error);
       return;
     }
