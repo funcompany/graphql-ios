@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		29F6D3A01F68F7BBF71B7239 /* libPods-Apollo_OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 941B04D397EF3452436A3031 /* libPods-Apollo_OC.a */; };
-		ED52EAF11EA879CA000707DB /* Apollo.podspec in Resources */ = {isa = PBXBuildFile; fileRef = ED52EAF01EA879CA000707DB /* Apollo.podspec */; };
+		ED52EAF31EA88855000707DB /* Apollo.podspec in Resources */ = {isa = PBXBuildFile; fileRef = ED52EAF21EA88855000707DB /* Apollo.podspec */; };
 		ED6903621EA70EB50000A8C9 /* JSONStandardTypeConversions.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6903611EA70EB50000A8C9 /* JSONStandardTypeConversions.m */; };
 		ED6903651EA722AC0000A8C9 /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6903641EA722AC0000A8C9 /* API.m */; };
 		ED69036B1EA74C080000A8C9 /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = ED69036A1EA74C080000A8C9 /* NSArray+Map.m */; };
@@ -51,7 +51,7 @@
 		421EFCEF52199683BB61B243 /* Pods-Apollo_OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apollo_OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-Apollo_OC/Pods-Apollo_OC.release.xcconfig"; sourceTree = "<group>"; };
 		941B04D397EF3452436A3031 /* libPods-Apollo_OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Apollo_OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F61DE28BF357E0C8CA78D1 /* Pods-Apollo_OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apollo_OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Apollo_OC/Pods-Apollo_OC.debug.xcconfig"; sourceTree = "<group>"; };
-		ED52EAF01EA879CA000707DB /* Apollo.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Apollo.podspec; sourceTree = "<group>"; };
+		ED52EAF21EA88855000707DB /* Apollo.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Apollo.podspec; sourceTree = SOURCE_ROOT; };
 		ED6903601EA70EB50000A8C9 /* JSONStandardTypeConversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONStandardTypeConversions.h; sourceTree = "<group>"; };
 		ED6903611EA70EB50000A8C9 /* JSONStandardTypeConversions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONStandardTypeConversions.m; sourceTree = "<group>"; };
 		ED6903631EA722AC0000A8C9 /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
@@ -169,7 +169,7 @@
 		ED8709691EA610A200CB9BC6 /* Apollo */ = {
 			isa = PBXGroup;
 			children = (
-				ED52EAF01EA879CA000707DB /* Apollo.podspec */,
+				ED52EAF21EA88855000707DB /* Apollo.podspec */,
 				ED87098F1EA63F5E00CB9BC6 /* Apollo.pch */,
 				ED87096D1EA610A200CB9BC6 /* AppDelegate.h */,
 				ED87096E1EA610A200CB9BC6 /* AppDelegate.m */,
@@ -342,7 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED87097D1EA610A200CB9BC6 /* LaunchScreen.storyboard in Resources */,
-				ED52EAF11EA879CA000707DB /* Apollo.podspec in Resources */,
+				ED52EAF31EA88855000707DB /* Apollo.podspec in Resources */,
 				ED87097A1EA610A200CB9BC6 /* Assets.xcassets in Resources */,
 				ED8709781EA610A200CB9BC6 /* Main.storyboard in Resources */,
 			);
