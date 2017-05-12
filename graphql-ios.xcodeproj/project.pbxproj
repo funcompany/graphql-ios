@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		29F6D3A01F68F7BBF71B7239 /* libPods-Apollo_OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 941B04D397EF3452436A3031 /* libPods-Apollo_OC.a */; };
 		ED52EAF31EA88855000707DB /* Apollo.podspec in Resources */ = {isa = PBXBuildFile; fileRef = ED52EAF21EA88855000707DB /* Apollo.podspec */; };
+		ED5F68431EC57D75004D3D96 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = ED5F68421EC57D75004D3D96 /* README.md */; };
 		ED6903621EA70EB50000A8C9 /* JSONStandardTypeConversions.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6903611EA70EB50000A8C9 /* JSONStandardTypeConversions.m */; };
 		ED6903651EA722AC0000A8C9 /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6903641EA722AC0000A8C9 /* API.m */; };
 		ED69036B1EA74C080000A8C9 /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = ED69036A1EA74C080000A8C9 /* NSArray+Map.m */; };
@@ -52,6 +53,7 @@
 		941B04D397EF3452436A3031 /* libPods-Apollo_OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Apollo_OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F61DE28BF357E0C8CA78D1 /* Pods-Apollo_OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apollo_OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Apollo_OC/Pods-Apollo_OC.debug.xcconfig"; sourceTree = "<group>"; };
 		ED52EAF21EA88855000707DB /* Apollo.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Apollo.podspec; sourceTree = SOURCE_ROOT; };
+		ED5F68421EC57D75004D3D96 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ED6903601EA70EB50000A8C9 /* JSONStandardTypeConversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONStandardTypeConversions.h; sourceTree = "<group>"; };
 		ED6903611EA70EB50000A8C9 /* JSONStandardTypeConversions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONStandardTypeConversions.m; sourceTree = "<group>"; };
 		ED6903631EA722AC0000A8C9 /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
@@ -62,7 +64,7 @@
 		ED69036E1EA74C7A0000A8C9 /* NSMutableArray+Concat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Concat.m"; sourceTree = "<group>"; };
 		ED6903701EA74C920000A8C9 /* NSSet+Disjoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+Disjoint.h"; sourceTree = "<group>"; };
 		ED6903711EA74C920000A8C9 /* NSSet+Disjoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+Disjoint.m"; sourceTree = "<group>"; };
-		ED8709671EA610A200CB9BC6 /* Apollo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apollo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED8709671EA610A200CB9BC6 /* graphql-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "graphql-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED87096B1EA610A200CB9BC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED87096D1EA610A200CB9BC6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ED87096E1EA610A200CB9BC6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,7 +83,7 @@
 		ED87098A1EA611EE00CB9BC6 /* FetchQueryOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchQueryOperation.m; sourceTree = "<group>"; };
 		ED87098C1EA6122F00CB9BC6 /* ApolloStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApolloStore.h; sourceTree = "<group>"; };
 		ED87098D1EA6122F00CB9BC6 /* ApolloStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApolloStore.m; sourceTree = "<group>"; };
-		ED87098F1EA63F5E00CB9BC6 /* Apollo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Apollo.pch; sourceTree = "<group>"; };
+		ED87098F1EA63F5E00CB9BC6 /* graphql-ios.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "graphql-ios.pch"; sourceTree = "<group>"; };
 		ED8709941EA63FBC00CB9BC6 /* ApolloTuple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApolloTuple.h; sourceTree = "<group>"; };
 		ED8709951EA63FBC00CB9BC6 /* ApolloTuple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApolloTuple.m; sourceTree = "<group>"; };
 		ED87099A1EA6401E00CB9BC6 /* RecordSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordSet.h; sourceTree = "<group>"; };
@@ -151,7 +153,7 @@
 		ED87095E1EA610A200CB9BC6 = {
 			isa = PBXGroup;
 			children = (
-				ED8709691EA610A200CB9BC6 /* Apollo */,
+				ED8709691EA610A200CB9BC6 /* graphql-ios */,
 				ED8709681EA610A200CB9BC6 /* Products */,
 				771C40CCBC07547C26783C72 /* Pods */,
 				F88877D0782A4CD6B54711FD /* Frameworks */,
@@ -161,16 +163,17 @@
 		ED8709681EA610A200CB9BC6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ED8709671EA610A200CB9BC6 /* Apollo.app */,
+				ED8709671EA610A200CB9BC6 /* graphql-ios.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ED8709691EA610A200CB9BC6 /* Apollo */ = {
+		ED8709691EA610A200CB9BC6 /* graphql-ios */ = {
 			isa = PBXGroup;
 			children = (
 				ED52EAF21EA88855000707DB /* Apollo.podspec */,
-				ED87098F1EA63F5E00CB9BC6 /* Apollo.pch */,
+				ED5F68421EC57D75004D3D96 /* README.md */,
+				ED87098F1EA63F5E00CB9BC6 /* graphql-ios.pch */,
 				ED87096D1EA610A200CB9BC6 /* AppDelegate.h */,
 				ED87096E1EA610A200CB9BC6 /* AppDelegate.m */,
 				ED8709701EA610A200CB9BC6 /* FirstViewController.h */,
@@ -186,7 +189,7 @@
 				ED87097E1EA610A200CB9BC6 /* Info.plist */,
 				ED87096A1EA610A200CB9BC6 /* Supporting Files */,
 			);
-			name = Apollo;
+			name = "graphql-ios";
 			path = Apollo_OC;
 			sourceTree = "<group>";
 		};
@@ -282,9 +285,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ED8709661EA610A200CB9BC6 /* Apollo */ = {
+		ED8709661EA610A200CB9BC6 /* graphql-ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED8709811EA610A200CB9BC6 /* Build configuration list for PBXNativeTarget "Apollo" */;
+			buildConfigurationList = ED8709811EA610A200CB9BC6 /* Build configuration list for PBXNativeTarget "graphql-ios" */;
 			buildPhases = (
 				9761A556E9B137CA4C99E471 /* [CP] Check Pods Manifest.lock */,
 				ED8709631EA610A200CB9BC6 /* Sources */,
@@ -297,9 +300,9 @@
 			);
 			dependencies = (
 			);
-			name = Apollo;
+			name = "graphql-ios";
 			productName = Apollo_OC;
-			productReference = ED8709671EA610A200CB9BC6 /* Apollo.app */;
+			productReference = ED8709671EA610A200CB9BC6 /* graphql-ios.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -318,7 +321,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ED8709621EA610A200CB9BC6 /* Build configuration list for PBXProject "Apollo" */;
+			buildConfigurationList = ED8709621EA610A200CB9BC6 /* Build configuration list for PBXProject "graphql-ios" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -331,7 +334,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ED8709661EA610A200CB9BC6 /* Apollo */,
+				ED8709661EA610A200CB9BC6 /* graphql-ios */,
 			);
 		};
 /* End PBXProject section */
@@ -431,6 +434,7 @@
 				ED8709A91EA6478F00CB9BC6 /* JSON.m in Sources */,
 				ED8709721EA610A200CB9BC6 /* FirstViewController.m in Sources */,
 				ED8709B21EA64CF000CB9BC6 /* GraphQLError.m in Sources */,
+				ED5F68431EC57D75004D3D96 /* README.md in Sources */,
 				ED87098E1EA6122F00CB9BC6 /* ApolloStore.m in Sources */,
 				ED8709A01EA6429D00CB9BC6 /* Record.m in Sources */,
 				ED6903621EA70EB50000A8C9 /* JSONStandardTypeConversions.m in Sources */,
@@ -557,7 +561,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZWR8MWYL3V;
-				GCC_PREFIX_HEADER = Apollo_OC/Apollo.pch;
+				GCC_PREFIX_HEADER = "Apollo_OC/graphql-ios.pch";
 				INFOPLIST_FILE = Apollo_OC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Midtown-Doornail.Apollo-OC";
@@ -571,7 +575,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZWR8MWYL3V;
-				GCC_PREFIX_HEADER = Apollo_OC/Apollo.pch;
+				GCC_PREFIX_HEADER = "Apollo_OC/graphql-ios.pch";
 				INFOPLIST_FILE = Apollo_OC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Midtown-Doornail.Apollo-OC";
@@ -582,7 +586,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ED8709621EA610A200CB9BC6 /* Build configuration list for PBXProject "Apollo" */ = {
+		ED8709621EA610A200CB9BC6 /* Build configuration list for PBXProject "graphql-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED87097F1EA610A200CB9BC6 /* Debug */,
@@ -591,7 +595,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED8709811EA610A200CB9BC6 /* Build configuration list for PBXNativeTarget "Apollo" */ = {
+		ED8709811EA610A200CB9BC6 /* Build configuration list for PBXNativeTarget "graphql-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED8709821EA610A200CB9BC6 /* Debug */,

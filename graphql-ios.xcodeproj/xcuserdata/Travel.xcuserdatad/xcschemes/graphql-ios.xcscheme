@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "ED8709661EA610A200CB9BC6"
-               BuildableName = "Apollo.app"
-               BlueprintName = "Apollo"
-               ReferencedContainer = "container:Apollo.xcodeproj">
+               BuildableName = "graphql-ios.app"
+               BlueprintName = "graphql-ios"
+               ReferencedContainer = "container:graphql-ios.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ED8709661EA610A200CB9BC6"
-            BuildableName = "Apollo.app"
-            BlueprintName = "Apollo"
-            ReferencedContainer = "container:Apollo.xcodeproj">
+            BuildableName = "graphql-ios.app"
+            BlueprintName = "graphql-ios"
+            ReferencedContainer = "container:graphql-ios.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ED8709661EA610A200CB9BC6"
-            BuildableName = "Apollo.app"
-            BlueprintName = "Apollo"
-            ReferencedContainer = "container:Apollo.xcodeproj">
+            BuildableName = "graphql-ios.app"
+            BlueprintName = "graphql-ios"
+            ReferencedContainer = "container:graphql-ios.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ED8709661EA610A200CB9BC6"
-            BuildableName = "Apollo.app"
-            BlueprintName = "Apollo"
-            ReferencedContainer = "container:Apollo.xcodeproj">
+            BuildableName = "graphql-ios.app"
+            BlueprintName = "graphql-ios"
+            ReferencedContainer = "container:graphql-ios.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "Apollo"
-  s.version      = "0.0.8"
-  s.summary      = "Apollo objective c version."
+  s.name         = "graphql-ios"
+  s.version      = "0.0.9"
+  s.summary      = "apollo-ios objective-c port."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,10 +25,10 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                    this is Apollo
+                    apollo-ios objective-c port
                    DESC
 
-  s.homepage     = "https://github.com/funcompany/Apollo"
+  s.homepage     = "https://github.com/funcompany/graphql-ios"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -77,7 +77,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/funcompany/Apollo.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/funcompany/graphql-ios.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Apollo_OC.xcodeproj">
+      location = "self:/Users/Travel/Work/interactivelabs/graphql-ios/graphql-ios.xcodeproj">
    </FileRef>
 </Workspace>
